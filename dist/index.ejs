@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Bot Chat Embed Test</title>
+        <link href="https://cdn.botframework.com/botframework-webchat/latest/botchat.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div>
+            <div style="margin-left: 320px" id="BotChatGoesHere"/>
+            <div style="clear:both;"/>
+        </div>
+        <script src="https://cdn.botframework.com/botframework-webchat/latest/botchat.js"></script>
+        <script>
+            console.log("initializing");
+            BotChat.App({
+                directLine: {
+                    token: "teste",
+                    domain:"http://localhost:9002/directline",
+                    webSocket: true// defaults to true
+                },
+                user: { id: 'pratik' },
+                bot: { id: 'yourbot' },
+            }, document.getElementById("BotChatGoesHere"));
+
+            //  botConnection = new BotChat.DirectLine({
+            //             // secret: params['directLine'],
+            //             token: "teste",
+            //             user: { id: 'pratik' },
+            //             bot: { id: 'yourbot' },
+            //             webSocket: true,
+            //             domain: "http://127.0.0.1:3000/directline"
+            //         });
+
+            //  BotChat.App(
+            //     {
+            //         botConnection: botConnection,
+            //     },document.getElementById('BotChatGoesHere')
+            // );
+
+
+        </script>
+    </body>
+</html>
