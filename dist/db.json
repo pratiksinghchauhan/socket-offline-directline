@@ -3879,6 +3879,819 @@
     {
       "conversationId": "fe3679b8-abf1-40aa-9051-e4ccb0631e7a",
       "history": []
+    },
+    {
+      "conversationId": "e04a9b85-ea89-4df4-a6ac-b30e99d1232a",
+      "history": [
+        {
+          "type": "message",
+          "text": "hello",
+          "from": {
+            "id": "pratik"
+          },
+          "locale": "en-US",
+          "textFormat": "plain",
+          "timestamp": "2018-07-23T11:13:17.163Z",
+          "channelData": {
+            "clientActivityId": "1532344014222.1643306972117624.0"
+          },
+          "entities": [
+            {
+              "type": "ClientCapabilities",
+              "requiresBotState": true,
+              "supportsTts": true,
+              "supportsListening": true
+            }
+          ],
+          "channelId": "emulator",
+          "serviceUrl": "http://127.0.0.1:9002",
+          "conversation": {
+            "id": "e04a9b85-ea89-4df4-a6ac-b30e99d1232a"
+          },
+          "id": "e3893c02-72d0-4d97-9a8b-a12d5b8536d5"
+        },
+        {
+          "type": "message",
+          "text": "Wohoooooo this worked",
+          "locale": "en-US",
+          "localTimestamp": "2018-07-23T11:13:17.603Z",
+          "recipient": {
+            "id": "pratik"
+          },
+          "inputHint": "acceptingInput",
+          "id": "ac7ecc16-1d30-461a-9faf-012f17fb702e",
+          "timestamp": "2018-07-23T11:13:17.643Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "event",
+          "name": "debug",
+          "value": [
+            {
+              "type": "log",
+              "timestamp": 1532344397283,
+              "level": "info",
+              "msg": "UniversalBot(\"*\") routing \"hello\" from \"emulator\"",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1532344397293,
+              "level": "info",
+              "msg": "Session.beginDialog(/)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1532344397296,
+              "level": "info",
+              "msg": "waterfall() step 1 of 1",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1532344397299,
+              "level": "info",
+              "msg": "Session.send()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1532344397300,
+              "level": "info",
+              "msg": "Session.endDialog()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1532344397555,
+              "level": "info",
+              "msg": "Session.sendBatch() sending 1 message(s)",
+              "args": []
+            }
+          ],
+          "relatesTo": {
+            "id": "e3893c02-72d0-4d97-9a8b-a12d5b8536d5",
+            "channelId": "emulator",
+            "user": {
+              "id": "pratik"
+            },
+            "conversation": {
+              "id": "e04a9b85-ea89-4df4-a6ac-b30e99d1232a"
+            },
+            "serviceUrl": "http://127.0.0.1:9002"
+          },
+          "text": "Debug Event",
+          "localTimestamp": "2018-07-23T11:13:17.669Z",
+          "recipient": {
+            "id": "pratik"
+          },
+          "id": "62dffdef-ea70-4036-b86a-fe4c1a6c873d",
+          "timestamp": "2018-07-23T11:13:17.861Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        }
+      ]
+    },
+    {
+      "conversationId": "993da5bc-928c-430b-9672-3abd2a63417e",
+      "history": [
+        {
+          "type": "message",
+          "text": "hello",
+          "from": {
+            "id": "pratik"
+          },
+          "locale": "en-US",
+          "textFormat": "plain",
+          "timestamp": "2018-07-23T11:13:37.224Z",
+          "channelData": {
+            "clientActivityId": "1532344412170.8811127947558057.0"
+          },
+          "entities": [
+            {
+              "type": "ClientCapabilities",
+              "requiresBotState": true,
+              "supportsTts": true,
+              "supportsListening": true
+            }
+          ],
+          "channelId": "emulator",
+          "serviceUrl": "http://127.0.0.1:9002",
+          "conversation": {
+            "id": "993da5bc-928c-430b-9672-3abd2a63417e"
+          },
+          "id": "0c279bfb-983f-4e91-8e0b-3d69fc57155d"
+        },
+        {
+          "type": "message",
+          "text": "Wohoooooo this worked",
+          "locale": "en-US",
+          "localTimestamp": "2018-07-23T11:13:37.626Z",
+          "recipient": {
+            "id": "pratik"
+          },
+          "inputHint": "acceptingInput",
+          "id": "6e23e555-9e57-4ae7-8926-907c8fe03101",
+          "timestamp": "2018-07-23T11:13:37.660Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "event",
+          "name": "debug",
+          "value": [
+            {
+              "type": "log",
+              "timestamp": 1532344417327,
+              "level": "info",
+              "msg": "UniversalBot(\"*\") routing \"hello\" from \"emulator\"",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1532344417330,
+              "level": "info",
+              "msg": "Session.beginDialog(/)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1532344417332,
+              "level": "info",
+              "msg": "waterfall() step 1 of 1",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1532344417333,
+              "level": "info",
+              "msg": "Session.send()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1532344417335,
+              "level": "info",
+              "msg": "Session.endDialog()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1532344417587,
+              "level": "info",
+              "msg": "Session.sendBatch() sending 1 message(s)",
+              "args": []
+            }
+          ],
+          "relatesTo": {
+            "id": "0c279bfb-983f-4e91-8e0b-3d69fc57155d",
+            "channelId": "emulator",
+            "user": {
+              "id": "pratik"
+            },
+            "conversation": {
+              "id": "993da5bc-928c-430b-9672-3abd2a63417e"
+            },
+            "serviceUrl": "http://127.0.0.1:9002"
+          },
+          "text": "Debug Event",
+          "localTimestamp": "2018-07-23T11:13:37.679Z",
+          "recipient": {
+            "id": "pratik"
+          },
+          "id": "9771b384-0b10-46b3-a94a-770a1df90d2d",
+          "timestamp": "2018-07-23T11:13:37.838Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        }
+      ]
+    },
+    {
+      "conversationId": "bcde0fb9-a26e-4f4e-8655-c3345056a229",
+      "history": [
+        {
+          "type": "message",
+          "text": "hello",
+          "from": {
+            "id": "pratik"
+          },
+          "locale": "en-US",
+          "textFormat": "plain",
+          "timestamp": "2018-07-23T11:13:56.346Z",
+          "channelData": {
+            "clientActivityId": "1532344431341.04037870821884271.0"
+          },
+          "entities": [
+            {
+              "type": "ClientCapabilities",
+              "requiresBotState": true,
+              "supportsTts": true,
+              "supportsListening": true
+            }
+          ],
+          "channelId": "emulator",
+          "serviceUrl": "http://127.0.0.1:9002",
+          "conversation": {
+            "id": "bcde0fb9-a26e-4f4e-8655-c3345056a229"
+          },
+          "id": "62f07023-960b-4593-b933-0006751734dc"
+        },
+        {
+          "type": "message",
+          "text": "Wohoooooo this worked",
+          "locale": "en-US",
+          "localTimestamp": "2018-07-23T11:13:56.742Z",
+          "recipient": {
+            "id": "pratik"
+          },
+          "inputHint": "acceptingInput",
+          "id": "e698c766-2e1f-438e-9a32-5214ed4252f7",
+          "timestamp": "2018-07-23T11:13:56.763Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "event",
+          "name": "debug",
+          "value": [
+            {
+              "type": "log",
+              "timestamp": 1532344436453,
+              "level": "info",
+              "msg": "UniversalBot(\"*\") routing \"hello\" from \"emulator\"",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1532344436460,
+              "level": "info",
+              "msg": "Session.beginDialog(/)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1532344436463,
+              "level": "info",
+              "msg": "waterfall() step 1 of 1",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1532344436465,
+              "level": "info",
+              "msg": "Session.send()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1532344436466,
+              "level": "info",
+              "msg": "Session.endDialog()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1532344436718,
+              "level": "info",
+              "msg": "Session.sendBatch() sending 1 message(s)",
+              "args": []
+            }
+          ],
+          "relatesTo": {
+            "id": "62f07023-960b-4593-b933-0006751734dc",
+            "channelId": "emulator",
+            "user": {
+              "id": "pratik"
+            },
+            "conversation": {
+              "id": "bcde0fb9-a26e-4f4e-8655-c3345056a229"
+            },
+            "serviceUrl": "http://127.0.0.1:9002"
+          },
+          "text": "Debug Event",
+          "localTimestamp": "2018-07-23T11:13:56.778Z",
+          "recipient": {
+            "id": "pratik"
+          },
+          "id": "98a3553f-352c-422d-b9bb-284733f39c0f",
+          "timestamp": "2018-07-23T11:13:56.884Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        }
+      ]
+    },
+    {
+      "conversationId": "6d7af1dd-7fff-46d2-862d-426aebf690b2",
+      "history": [
+        {
+          "type": "message",
+          "text": "hello",
+          "from": {
+            "id": "pratik"
+          },
+          "locale": "en-US",
+          "textFormat": "plain",
+          "timestamp": "2018-07-23T11:14:09.135Z",
+          "channelData": {
+            "clientActivityId": "1532344446447.29078244798130504.0"
+          },
+          "entities": [
+            {
+              "type": "ClientCapabilities",
+              "requiresBotState": true,
+              "supportsTts": true,
+              "supportsListening": true
+            }
+          ],
+          "channelId": "emulator",
+          "serviceUrl": "http://127.0.0.1:9002",
+          "conversation": {
+            "id": "6d7af1dd-7fff-46d2-862d-426aebf690b2"
+          },
+          "id": "db35be34-3294-4ff7-9c5c-2cdf10818e9b"
+        },
+        {
+          "type": "message",
+          "text": "Wohoooooo this worked",
+          "locale": "en-US",
+          "localTimestamp": "2018-07-23T11:14:09.559Z",
+          "recipient": {
+            "id": "pratik"
+          },
+          "inputHint": "acceptingInput",
+          "id": "7722b38d-aaa5-4bdd-9278-712aa3580599",
+          "timestamp": "2018-07-23T11:14:09.594Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "event",
+          "name": "debug",
+          "value": [
+            {
+              "type": "log",
+              "timestamp": 1532344449241,
+              "level": "info",
+              "msg": "UniversalBot(\"*\") routing \"hello\" from \"emulator\"",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1532344449251,
+              "level": "info",
+              "msg": "Session.beginDialog(/)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1532344449253,
+              "level": "info",
+              "msg": "waterfall() step 1 of 1",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1532344449255,
+              "level": "info",
+              "msg": "Session.send()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1532344449257,
+              "level": "info",
+              "msg": "Session.endDialog()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1532344449510,
+              "level": "info",
+              "msg": "Session.sendBatch() sending 1 message(s)",
+              "args": []
+            }
+          ],
+          "relatesTo": {
+            "id": "db35be34-3294-4ff7-9c5c-2cdf10818e9b",
+            "channelId": "emulator",
+            "user": {
+              "id": "pratik"
+            },
+            "conversation": {
+              "id": "6d7af1dd-7fff-46d2-862d-426aebf690b2"
+            },
+            "serviceUrl": "http://127.0.0.1:9002"
+          },
+          "text": "Debug Event",
+          "localTimestamp": "2018-07-23T11:14:09.614Z",
+          "recipient": {
+            "id": "pratik"
+          },
+          "id": "a0bb747b-94af-4a81-8738-c3006770ec9d",
+          "timestamp": "2018-07-23T11:14:09.783Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        }
+      ]
+    },
+    {
+      "conversationId": "8ad6f2d3-c46b-4116-b844-96e27bbe9be8",
+      "history": [
+        {
+          "type": "message",
+          "text": "hello",
+          "from": {
+            "id": "pratik"
+          },
+          "locale": "en-US",
+          "textFormat": "plain",
+          "timestamp": "2018-07-23T11:16:15.931Z",
+          "channelData": {
+            "clientActivityId": "1532344573316.23154877513428263.0"
+          },
+          "entities": [
+            {
+              "type": "ClientCapabilities",
+              "requiresBotState": true,
+              "supportsTts": true,
+              "supportsListening": true
+            }
+          ],
+          "channelId": "emulator",
+          "serviceUrl": "http://127.0.0.1:9002",
+          "conversation": {
+            "id": "8ad6f2d3-c46b-4116-b844-96e27bbe9be8"
+          },
+          "id": "f627a413-8f54-497e-8a23-199ad3b0c7b3"
+        },
+        {
+          "type": "message",
+          "text": "Wohoooooo this worked",
+          "locale": "en-US",
+          "localTimestamp": "2018-07-23T11:16:16.411Z",
+          "recipient": {
+            "id": "pratik"
+          },
+          "inputHint": "acceptingInput",
+          "id": "49c7cdf6-da8b-4707-a575-dc63ed4c7e0c",
+          "timestamp": "2018-07-23T11:16:16.444Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "event",
+          "name": "debug",
+          "value": [
+            {
+              "type": "log",
+              "timestamp": 1532344576095,
+              "level": "info",
+              "msg": "UniversalBot(\"*\") routing \"hello\" from \"emulator\"",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1532344576099,
+              "level": "info",
+              "msg": "Session.beginDialog(/)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1532344576100,
+              "level": "info",
+              "msg": "waterfall() step 1 of 1",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1532344576102,
+              "level": "info",
+              "msg": "Session.send()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1532344576106,
+              "level": "info",
+              "msg": "Session.endDialog()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1532344576361,
+              "level": "info",
+              "msg": "Session.sendBatch() sending 1 message(s)",
+              "args": []
+            }
+          ],
+          "relatesTo": {
+            "id": "f627a413-8f54-497e-8a23-199ad3b0c7b3",
+            "channelId": "emulator",
+            "user": {
+              "id": "pratik"
+            },
+            "conversation": {
+              "id": "8ad6f2d3-c46b-4116-b844-96e27bbe9be8"
+            },
+            "serviceUrl": "http://127.0.0.1:9002"
+          },
+          "text": "Debug Event",
+          "localTimestamp": "2018-07-23T11:16:16.473Z",
+          "recipient": {
+            "id": "pratik"
+          },
+          "id": "afe45f9b-8536-4175-a5e1-ace6e5684840",
+          "timestamp": "2018-07-23T11:16:16.640Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        }
+      ]
+    },
+    {
+      "conversationId": "1717d798-5c5c-48d6-adf5-ac1a1843ae28",
+      "history": [
+        {
+          "type": "message",
+          "text": "hello",
+          "from": {
+            "id": "pratik"
+          },
+          "locale": "en-US",
+          "textFormat": "plain",
+          "timestamp": "2018-07-23T11:16:48.983Z",
+          "channelData": {
+            "clientActivityId": "1532344606287.30369658878727224.0"
+          },
+          "entities": [
+            {
+              "type": "ClientCapabilities",
+              "requiresBotState": true,
+              "supportsTts": true,
+              "supportsListening": true
+            }
+          ],
+          "channelId": "emulator",
+          "serviceUrl": "http://127.0.0.1:9002",
+          "conversation": {
+            "id": "1717d798-5c5c-48d6-adf5-ac1a1843ae28"
+          },
+          "id": "348ea3c5-ec62-412c-b68f-113c7be66723"
+        },
+        {
+          "type": "message",
+          "text": "finally this worked",
+          "locale": "en-US",
+          "localTimestamp": "2018-07-23T11:16:49.436Z",
+          "recipient": {
+            "id": "pratik"
+          },
+          "inputHint": "acceptingInput",
+          "id": "ff54dd3f-0923-44c8-91c9-cc6dbc9f56fa",
+          "timestamp": "2018-07-23T11:16:49.473Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "event",
+          "name": "debug",
+          "value": [
+            {
+              "type": "log",
+              "timestamp": 1532344609124,
+              "level": "info",
+              "msg": "UniversalBot(\"*\") routing \"hello\" from \"emulator\"",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1532344609128,
+              "level": "info",
+              "msg": "Session.beginDialog(/)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1532344609130,
+              "level": "info",
+              "msg": "waterfall() step 1 of 1",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1532344609132,
+              "level": "info",
+              "msg": "Session.send()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1532344609133,
+              "level": "info",
+              "msg": "Session.endDialog()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1532344609386,
+              "level": "info",
+              "msg": "Session.sendBatch() sending 1 message(s)",
+              "args": []
+            }
+          ],
+          "relatesTo": {
+            "id": "348ea3c5-ec62-412c-b68f-113c7be66723",
+            "channelId": "emulator",
+            "user": {
+              "id": "pratik"
+            },
+            "conversation": {
+              "id": "1717d798-5c5c-48d6-adf5-ac1a1843ae28"
+            },
+            "serviceUrl": "http://127.0.0.1:9002"
+          },
+          "text": "Debug Event",
+          "localTimestamp": "2018-07-23T11:16:49.501Z",
+          "recipient": {
+            "id": "pratik"
+          },
+          "id": "7bd4cec4-740d-4279-8e94-1e051e37915c",
+          "timestamp": "2018-07-23T11:16:49.648Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "message",
+          "text": "socket",
+          "from": {
+            "id": "pratik"
+          },
+          "locale": "en-US",
+          "textFormat": "plain",
+          "timestamp": "2018-07-23T11:17:12.187Z",
+          "channelData": {
+            "clientActivityId": "1532344606287.30369658878727224.2"
+          },
+          "channelId": "emulator",
+          "serviceUrl": "http://127.0.0.1:9002",
+          "conversation": {
+            "id": "1717d798-5c5c-48d6-adf5-ac1a1843ae28"
+          },
+          "id": "d3cfbf31-7618-4347-9e58-9ed3d2313191"
+        },
+        {
+          "type": "message",
+          "text": "finally this worked",
+          "locale": "en-US",
+          "localTimestamp": "2018-07-23T11:17:12.619Z",
+          "recipient": {
+            "id": "pratik"
+          },
+          "inputHint": "acceptingInput",
+          "id": "0825c577-95ff-4df7-9e00-bc765fb7a960",
+          "timestamp": "2018-07-23T11:17:12.656Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "event",
+          "name": "debug",
+          "value": [
+            {
+              "type": "log",
+              "timestamp": 1532344632316,
+              "level": "info",
+              "msg": "UniversalBot(\"*\") routing \"socket\" from \"emulator\"",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1532344632318,
+              "level": "info",
+              "msg": "Session.beginDialog(/)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1532344632319,
+              "level": "info",
+              "msg": "waterfall() step 1 of 1",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1532344632321,
+              "level": "info",
+              "msg": "Session.send()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1532344632323,
+              "level": "info",
+              "msg": "Session.endDialog()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1532344632578,
+              "level": "info",
+              "msg": "Session.sendBatch() sending 1 message(s)",
+              "args": []
+            }
+          ],
+          "relatesTo": {
+            "id": "d3cfbf31-7618-4347-9e58-9ed3d2313191",
+            "channelId": "emulator",
+            "user": {
+              "id": "pratik"
+            },
+            "conversation": {
+              "id": "1717d798-5c5c-48d6-adf5-ac1a1843ae28"
+            },
+            "serviceUrl": "http://127.0.0.1:9002"
+          },
+          "text": "Debug Event",
+          "localTimestamp": "2018-07-23T11:17:12.675Z",
+          "recipient": {
+            "id": "pratik"
+          },
+          "id": "54964b76-df60-44a1-8868-ef2a02769439",
+          "timestamp": "2018-07-23T11:17:12.840Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        }
+      ]
     }
   ]
 }

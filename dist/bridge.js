@@ -13,6 +13,7 @@ const expires_in = 1800;
 const conversationsCleanupInterval = 10000;
 // let conversations: { [key: string]:  IConversation} = {};
 let botDataStore = {};
+var connections = []
 // conversationInitRequired -> By default require that a conversation is initialized before it is accessed, returning a 400
 // when not the case. If set to false, a new conversation reference is created on the fly
 exports.initializeRoutes = (app, serviceUrl, botUrl, conversationInitRequired = true, port = 9002) => {
@@ -31,6 +32,7 @@ exports.initializeRoutes = (app, serviceUrl, botUrl, conversationInitRequired = 
     });
     var expressWs = require('express-ws')(app);
     app.ws('/directline', function (ws, req) {
+        connections.push(ws);
         ws.on('message', function (msg) {
             console.log("Message recieved from socket:");
             console.log(msg);
@@ -196,6 +198,13 @@ exports.initializeRoutes = (app, serviceUrl, botUrl, conversationInitRequired = 
                 .write();
             console.log("sending response")
             //console.log(res);
+            connections.forEach(function(c){
+                c.send(
+                    JSON.stringify({
+                        "activities": [activity],
+                    })
+                ); // Send the new text to all open connections
+              })
             res.status(200).send();
         }
         else {

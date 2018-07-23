@@ -27,7 +27,7 @@ var bot = new builder.UniversalBot(connector);
 
 
 bot.dialog('/', function(session) {
-    session.send('Wohoooooo this worked');
+    session.send('finally this worked');
     session.endDialog();
 });
 
