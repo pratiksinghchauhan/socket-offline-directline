@@ -248,6 +248,8 @@ export const initializeRoutes = (app: express.Server, serviceUrl: string, botUrl
                     })
             })
 
+            console.log(expressWs.getWss())
+
             // expressWs.getWss().clients[0].server.send()
 
             db.get('conversations')
