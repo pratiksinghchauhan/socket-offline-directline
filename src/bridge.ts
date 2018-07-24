@@ -12,7 +12,7 @@ const db = low(adapter)
 
 db.defaults({ conversations: [] })
     .write();
-
+var connections = []
 
 
 import { IActivity, IAttachment, IBotData, IChannelAccount, IConversation, IConversationAccount, IEntity, IMessageActivity, IUser, IConversationUpdateActivity } from './types';
@@ -43,8 +43,9 @@ export const initializeRoutes = (app: express.Server, serviceUrl: string, botUrl
 
     var expressWs = require('express-ws')(app);
 
-    app.ws('/directline', function(ws, req) {
-
+    app.ws('/directline/:conversationId', function(ws, req) {
+        console.log(req.params.conversationId);
+        connections[req.params.conversationId] =  ws;
 
         ws.on('message', function(msg) {
             console.log(msg);
@@ -254,6 +255,13 @@ export const initializeRoutes = (app: express.Server, serviceUrl: string, botUrl
                 .find({ conversationId: conversation.conversationId })
                 .assign({ 'history': conversation.history})
                 .write()
+            
+            console.log(connections);
+            connections[req.params.conversationId].send(
+                    JSON.stringify({
+                        "activities": [activity],
+                    })
+                )
 
             res.status(200).send();
         }
