@@ -1,6 +1,6 @@
 {
-  "name": "offline-directline",
-  "version": "1.2.4",
+  "name": "asksuite-offline-directline",
+  "version": "1.0.4",
   "description": "Unofficial offline version of the Bot Framework Directline connector",
   "homepage": "https://github.com/ryanvolum/offline_dl",
   "main": "dist/bridge.js",
@@ -9,7 +9,7 @@
     "build": "tsc",
     "watch": "tsc -w",
     "nodewatch": "nodemon dist/index.js",
-    "start": "node dist/index.js",
+    "start": "ts-node src/index.ts",
     "directline": "node dist/cmdutil.js"
   },
   "types": "dist/bridge.d.ts",
@@ -22,15 +22,22 @@
   "dependencies": {
     "@types/dotenv": "^4.0.0",
     "@types/isomorphic-fetch": "0.0.34",
+    "@types/url-parse": "^1.4.1",
     "body-parser": "^1.17.2",
     "botbuilder": "^3.15.0",
     "ejs": "^2.6.1",
     "es6-promise": "^4.1.1",
-    "express": "^4.15.3",
-    "express-ws": "^4.0.0",
+    "express": "4.15.3",
+    "express-ws": "4.0.0",
     "isomorphic-fetch": "^2.2.1",
     "lowdb": "^1.0.0",
     "moment": "^2.19.1",
+    "url-parse": "^1.4.4",
     "uuid": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.29",
+    "ts-node": "3.3.0",
+    "typescript": "^2.5.2"
   }
 }

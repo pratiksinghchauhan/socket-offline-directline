@@ -3,17 +3,17 @@ import bodyParser = require('body-parser');
 import 'isomorphic-fetch';
 import * as moment from 'moment';
 import * as uuidv4 from 'uuid/v4';
-
+import * as URLParse from 'url-parse'
 import * as low from 'lowdb'
 import * as FileSync from 'lowdb/adapters/FileSync'
 
-const adapter = new FileSync('dist/db.json')
+const adapter = new FileSync('db.json')
 const db = low(adapter)
 
 db.defaults({ conversations: [] })
     .write();
 
-
+var connections = []
 
 import { IActivity, IAttachment, IBotData, IChannelAccount, IConversation, IConversationAccount, IEntity, IMessageActivity, IUser, IConversationUpdateActivity } from './types';
 
@@ -25,7 +25,7 @@ let botDataStore: { [key: string]: IBotData } = {};
 
 // conversationInitRequired -> By default require that a conversation is initialized before it is accessed, returning a 400
 // when not the case. If set to false, a new conversation reference is created on the fly
-export const initializeRoutes = (app: express.Server, serviceUrl: string, botUrl: string, conversationInitRequired = true, port: number = 3000) => {
+export const initializeRoutes = (app, serviceUrl: string, botUrl: string, conversationInitRequired = true, port: number = 3000) => {
     conversationsCleanup();
     app.use(bodyParser.json()); // for parsing application/json
     app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
@@ -44,12 +44,23 @@ export const initializeRoutes = (app: express.Server, serviceUrl: string, botUrl
     var expressWs = require('express-ws')(app);
 
     app.ws('/directline', function(ws, req) {
+        var id = req.headers['sec-websocket-key'];
+        console.log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBB");
+        // console.log("URL", new URLParse(req.url).query);
+        // console.log(id)
 
+        let query = new URLParse(req.url).query;
+
+        let conversationId = query.toString().split('=')[1];
+
+        console.log(conversationId);
+
+        connections[conversationId] =  ws;
 
         ws.on('message', function(msg) {
             console.log(msg);
         });
-
+        //HERE YOU CAN GET THE QUERYPARAM
         console.log('socket');
     });
 
@@ -71,7 +82,7 @@ export const initializeRoutes = (app: express.Server, serviceUrl: string, botUrl
             }
         }).then(response => {
             res.status(response.status).send({
-                streamUrl : "ws://localhost:9002/directline",
+                streamUrl : "ws://localhost:9002/directline?conversationId="+conversationId,
                 conversationId,
                 expires_in,
                 token: "token"
@@ -178,6 +189,9 @@ export const initializeRoutes = (app: express.Server, serviceUrl: string, botUrl
                 .assign({ 'history': conversation.history})
                 .write()
 
+
+            console.log("botURL", botUrl);
+
             fetch(botUrl, {
                 method: "POST",
                 body: JSON.stringify(activity),
@@ -242,13 +256,13 @@ export const initializeRoutes = (app: express.Server, serviceUrl: string, botUrl
             conversation.history.push(activity);
 
             expressWs.getWss().clients.forEach(item => {
-                // console.log("aqui mandando")
+                console.log("aqui mandando")
                 JSON.stringify({
                         activities : [activity],
                     })
             })
 
-            console.log(expressWs.getWss())
+            // console.log(expressWs.getWss())
 
             // expressWs.getWss().clients[0].server.send()
 
@@ -256,6 +270,14 @@ export const initializeRoutes = (app: express.Server, serviceUrl: string, botUrl
                 .find({ conversationId: conversation.conversationId })
                 .assign({ 'history': conversation.history})
                 .write()
+
+            console.log("sending response")
+            //console.log(res);
+            connections[req.params.conversationId].send(
+                JSON.stringify({
+                    "activities": [activity],
+                })
+            )
 
             res.status(200).send();
         }

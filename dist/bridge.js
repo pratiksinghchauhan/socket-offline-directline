@@ -3,20 +3,21 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const bodyParser = require("body-parser");
 require("isomorphic-fetch");
 const uuidv4 = require("uuid/v4");
+const URLParse = require("url-parse");
 const low = require("lowdb");
 const FileSync = require("lowdb/adapters/FileSync");
-const adapter = new FileSync('dist/db.json');
+const adapter = new FileSync('db.json');
 const db = low(adapter);
 db.defaults({ conversations: [] })
     .write();
+var connections = [];
 const expires_in = 1800;
 const conversationsCleanupInterval = 10000;
 // let conversations: { [key: string]:  IConversation} = {};
 let botDataStore = {};
-var connections = []
 // conversationInitRequired -> By default require that a conversation is initialized before it is accessed, returning a 400
 // when not the case. If set to false, a new conversation reference is created on the fly
-exports.initializeRoutes = (app, serviceUrl, botUrl, conversationInitRequired = true, port = 9002) => {
+exports.initializeRoutes = (app, serviceUrl, botUrl, conversationInitRequired = true, port = 3000) => {
     conversationsCleanup();
     app.use(bodyParser.json()); // for parsing application/json
     app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
@@ -32,11 +33,18 @@ exports.initializeRoutes = (app, serviceUrl, botUrl, conversationInitRequired = 
     });
     var expressWs = require('express-ws')(app);
     app.ws('/directline', function (ws, req) {
-        connections.push(ws);
+        var id = req.headers['sec-websocket-key'];
+        console.log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBB");
+        // console.log("URL", new URLParse(req.url).query);
+        // console.log(id)
+        let query = new URLParse(req.url).query;
+        let conversationId = query.toString().split('=')[1];
+        console.log(conversationId);
+        connections[conversationId] = ws;
         ws.on('message', function (msg) {
-            console.log("Message recieved from socket:");
             console.log(msg);
         });
+        //HERE YOU CAN GET THE QUERYPARAM
         console.log('socket');
     });
     //Creates a conversation
@@ -53,7 +61,7 @@ exports.initializeRoutes = (app, serviceUrl, botUrl, conversationInitRequired = 
             }
         }).then(response => {
             res.status(response.status).send({
-                streamUrl: "ws://localhost:9002/directline",
+                streamUrl: "ws://localhost:9002/directline?conversationId=" + conversationId,
                 conversationId,
                 expires_in,
                 token: "token"
@@ -136,6 +144,7 @@ exports.initializeRoutes = (app, serviceUrl, botUrl, conversationInitRequired = 
                 .find({ conversationId: conversation.conversationId })
                 .assign({ 'history': conversation.history })
                 .write();
+            console.log("botURL", botUrl);
             fetch(botUrl, {
                 method: "POST",
                 body: JSON.stringify(activity),
@@ -158,7 +167,6 @@ exports.initializeRoutes = (app, serviceUrl, botUrl, conversationInitRequired = 
     app.post('/v3/conversations/:conversationId/activities', (req, res) => {
         console.log("Post activity: " + req.params.conversationId);
         let activity;
-       
         activity = req.body;
         activity.id = uuidv4();
         activity.timestamp = new Date().toISOString();
@@ -177,34 +185,29 @@ exports.initializeRoutes = (app, serviceUrl, botUrl, conversationInitRequired = 
         console.log("Post activityID: " + req.params.conversationId);
         let activity;
         activity = req.body;
-        //console.log(req.body);
         activity.id = uuidv4();
         activity.timestamp = new Date().toISOString();
         activity.from = { id: "id", name: "Atendente" };
         let conversation = getConversation(req.params.conversationId, conversationInitRequired);
-        //console.log(conversation)
         if (conversation) {
             conversation.history.push(activity);
             expressWs.getWss().clients.forEach(item => {
-                console.log(activity)
+                console.log("aqui mandando");
                 JSON.stringify({
                     activities: [activity],
                 });
             });
-            //expressWs.getWss().clients[0].server.send()
+            // console.log(expressWs.getWss())
+            // expressWs.getWss().clients[0].server.send()
             db.get('conversations')
                 .find({ conversationId: conversation.conversationId })
                 .assign({ 'history': conversation.history })
                 .write();
-            console.log("sending response")
+            console.log("sending response");
             //console.log(res);
-            connections.forEach(function(c){
-                c.send(
-                    JSON.stringify({
-                        "activities": [activity],
-                    })
-                ); // Send the new text to all open connections
-              })
+            connections[req.params.conversationId].send(JSON.stringify({
+                "activities": [activity],
+            }));
             res.status(200).send();
         }
         else {

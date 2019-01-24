@@ -1,0 +1,3396 @@
+{
+  "conversations": [
+    {
+      "conversationId": "257feac4-6bb6-4b7f-bd35-7a7488b5f9a1",
+      "history": [
+        {
+          "type": "event",
+          "user": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "from": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "track": {
+            "botUserId": 803531315,
+            "mobile": false,
+            "companyId": "fazzendapark",
+            "page": "http://localhost:3000/botchatframe/teste-iframe.html?hotel=fazzendapark&urlhotel=http://www.fazzsenda.com.br/&local=true&new_direct_line=true",
+            "language": "pt-BR",
+            "browserData": {
+              "name": "Chrome",
+              "os": "Windows",
+              "os_version": "10",
+              "resolution": "1036x834"
+            }
+          },
+          "channelId": "emulator",
+          "serviceUrl": "http://127.0.0.1:9002",
+          "conversation": {
+            "id": "257feac4-6bb6-4b7f-bd35-7a7488b5f9a1"
+          },
+          "id": "9fefad75-fad7-4714-a57e-70d6eae18dda"
+        },
+        {
+          "type": "typing",
+          "localTimestamp": "2018-12-11T20:52:30.943Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "7cd94bdc-10b7-400e-b3ef-d06e1df1f820",
+          "timestamp": "2018-12-11T20:52:30.952Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "message",
+          "text": "Seja bem-vindo ao Fazzenda Park Hotel! Eu sou o Gasparinho, o mascote do Fazzenda e estou aqui 24hr para  ajudá-lo no que for preciso! \n",
+          "attachments": [
+            {
+              "contentType": "application/vnd.microsoft.card.hero",
+              "content": {
+                "buttons": [
+                  {
+                    "type": "postBack",
+                    "value": "botaction?fazzendapark.reserva={\"label\":\"📅 Reservas\"}",
+                    "title": "📅 Reservas"
+                  },
+                  {
+                    "type": "postBack",
+                    "value": "botaction?fazzendapark.sobrehotel={\"label\":\"🛌 Sobre o Hotel\"}",
+                    "title": "🛌 Sobre o Hotel"
+                  },
+                  {
+                    "type": "postBack",
+                    "value": "botaction?fazzendapark.localizacao={\"label\":\"📍 Localização\"}",
+                    "title": "📍 Localização"
+                  },
+                  {
+                    "type": "postBack",
+                    "value": "botaction?fazzendapark.pacotes={\"label\":\"⛱ Pacotes\"}",
+                    "title": "⛱ Pacotes"
+                  },
+                  {
+                    "type": "postBack",
+                    "value": "botaction?fazzendapark.atracoes={\"label\":\"🎪 Atrações do Fazzenda\"}",
+                    "title": "🎪 Atrações do Fazzenda"
+                  }
+                ]
+              }
+            }
+          ],
+          "localTimestamp": "2018-12-11T20:52:30.969Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "inputHint": "acceptingInput",
+          "id": "05ea2d3c-bf1d-4a79-858e-877c34a18846",
+          "timestamp": "2018-12-11T20:52:30.972Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "event",
+          "name": "debug",
+          "value": [
+            {
+              "type": "log",
+              "timestamp": 1544561550685,
+              "level": "info",
+              "msg": "Session.sendTyping()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544561550689,
+              "level": "info",
+              "msg": "UniversalBot(\"*\") routing <null> from \"emulator\"",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544561550690,
+              "level": "info",
+              "msg": "Session.beginDialog(init)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544561550690,
+              "level": "info",
+              "msg": "waterfall() step 1 of 1",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544561550691,
+              "level": "info",
+              "msg": "Session.send()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544561550942,
+              "level": "info",
+              "msg": "Session.sendBatch() sending 2 message(s)",
+              "args": []
+            }
+          ],
+          "relatesTo": {
+            "id": "9fefad75-fad7-4714-a57e-70d6eae18dda",
+            "channelId": "emulator",
+            "user": {
+              "id": "fazzendapark",
+              "name": "Visitante"
+            },
+            "conversation": {
+              "id": "257feac4-6bb6-4b7f-bd35-7a7488b5f9a1"
+            },
+            "serviceUrl": "http://127.0.0.1:9002"
+          },
+          "text": "Debug Event",
+          "localTimestamp": "2018-12-11T20:52:30.987Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "03bd79cf-ac21-44e0-b7d9-37e3065db3b6",
+          "timestamp": "2018-12-11T20:52:30.991Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "typing",
+          "from": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "channelId": "emulator",
+          "serviceUrl": "http://127.0.0.1:9002",
+          "conversation": {
+            "id": "257feac4-6bb6-4b7f-bd35-7a7488b5f9a1"
+          },
+          "id": "07954975-a5ef-462b-b450-b74596b7a678"
+        },
+        {
+          "event": null,
+          "type": "message",
+          "text": "oi",
+          "from": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "locale": "pt-BR",
+          "textFormat": "plain",
+          "timestamp": "2018-12-11T20:56:51.721Z",
+          "channelData": {
+            "clientActivityId": "1544561550485.08998556573409688.0"
+          },
+          "entities": [
+            {
+              "type": "ClientCapabilities",
+              "requiresBotState": true,
+              "supportsTts": true,
+              "supportsListening": true
+            }
+          ],
+          "channelId": "emulator",
+          "serviceUrl": "http://127.0.0.1:9002",
+          "conversation": {
+            "id": "257feac4-6bb6-4b7f-bd35-7a7488b5f9a1"
+          },
+          "id": "6bfdacca-2dfa-48d6-b45d-0854c38e2587"
+        },
+        {
+          "type": "typing",
+          "locale": "pt-BR",
+          "localTimestamp": "2018-12-11T20:56:52.631Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "c7bdf85e-0d02-45a0-bf8f-706778da0764",
+          "timestamp": "2018-12-11T20:56:52.637Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "typing",
+          "locale": "pt-BR",
+          "localTimestamp": "2018-12-11T20:56:52.653Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "25e24f7a-769c-47bc-a759-7f19b88e6436",
+          "timestamp": "2018-12-11T20:56:52.659Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "message",
+          "text": "Oi, seja bem-vindo! Como posso ajudá-lo?",
+          "locale": "pt-BR",
+          "localTimestamp": "2018-12-11T20:56:52.676Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "inputHint": "acceptingInput",
+          "id": "acf806ce-133f-43f3-962e-90386fe53ce5",
+          "timestamp": "2018-12-11T20:56:52.682Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "event",
+          "name": "debug",
+          "value": [
+            {
+              "type": "log",
+              "timestamp": 1544561811783,
+              "level": "info",
+              "msg": "Session.sendTyping()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544561811788,
+              "level": "info",
+              "msg": "Session.sendTyping()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544561812378,
+              "level": "info",
+              "msg": "Session.send()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544561812630,
+              "level": "info",
+              "msg": "Session.sendBatch() sending 3 message(s)",
+              "args": []
+            }
+          ],
+          "relatesTo": {
+            "id": "6bfdacca-2dfa-48d6-b45d-0854c38e2587",
+            "channelId": "emulator",
+            "user": {
+              "id": "fazzendapark",
+              "name": "Visitante"
+            },
+            "conversation": {
+              "id": "257feac4-6bb6-4b7f-bd35-7a7488b5f9a1"
+            },
+            "serviceUrl": "http://127.0.0.1:9002"
+          },
+          "text": "Debug Event",
+          "localTimestamp": "2018-12-11T20:56:52.699Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "a98510b3-280d-440d-8100-d36b78b5133b",
+          "timestamp": "2018-12-11T20:56:52.704Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        }
+      ]
+    },
+    {
+      "conversationId": "6bf36bb2-a834-40fc-b12b-3d1391338120",
+      "history": [
+        {
+          "type": "event",
+          "user": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "from": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "track": {
+            "botUserId": 803531315,
+            "mobile": false,
+            "companyId": "fazzendapark",
+            "page": "http://localhost:3000/botchatframe/teste-iframe.html?hotel=fazzendapark&urlhotel=http://www.fazzsenda.com.br/&local=true&new_direct_line=true",
+            "language": "pt-BR",
+            "browserData": {
+              "name": "Chrome",
+              "os": "Windows",
+              "os_version": "10",
+              "resolution": "1036x834"
+            }
+          },
+          "channelId": "emulator",
+          "serviceUrl": "http://127.0.0.1:9002",
+          "conversation": {
+            "id": "6bf36bb2-a834-40fc-b12b-3d1391338120"
+          },
+          "id": "4bdae280-7cb7-43eb-a2f3-6bf6b5753fae"
+        },
+        {
+          "type": "typing",
+          "localTimestamp": "2018-12-11T21:00:32.572Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "fb040a85-ee26-4703-8f5f-ca87e62c9089",
+          "timestamp": "2018-12-11T21:00:32.576Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "message",
+          "text": "Seja bem-vindo ao Fazzenda Park Hotel! Eu sou o Gasparinho, o mascote do Fazzenda e estou aqui 24hr para  ajudá-lo no que for preciso! \n",
+          "attachments": [
+            {
+              "contentType": "application/vnd.microsoft.card.hero",
+              "content": {
+                "buttons": [
+                  {
+                    "type": "postBack",
+                    "value": "botaction?fazzendapark.reserva={\"label\":\"📅 Reservas\"}",
+                    "title": "📅 Reservas"
+                  },
+                  {
+                    "type": "postBack",
+                    "value": "botaction?fazzendapark.sobrehotel={\"label\":\"🛌 Sobre o Hotel\"}",
+                    "title": "🛌 Sobre o Hotel"
+                  },
+                  {
+                    "type": "postBack",
+                    "value": "botaction?fazzendapark.localizacao={\"label\":\"📍 Localização\"}",
+                    "title": "📍 Localização"
+                  },
+                  {
+                    "type": "postBack",
+                    "value": "botaction?fazzendapark.pacotes={\"label\":\"⛱ Pacotes\"}",
+                    "title": "⛱ Pacotes"
+                  },
+                  {
+                    "type": "postBack",
+                    "value": "botaction?fazzendapark.atracoes={\"label\":\"🎪 Atrações do Fazzenda\"}",
+                    "title": "🎪 Atrações do Fazzenda"
+                  }
+                ]
+              }
+            }
+          ],
+          "localTimestamp": "2018-12-11T21:00:32.586Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "inputHint": "acceptingInput",
+          "id": "4968d194-8268-4f9b-a258-1f9d24d5faba",
+          "timestamp": "2018-12-11T21:00:32.588Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "event",
+          "name": "debug",
+          "value": [
+            {
+              "type": "log",
+              "timestamp": 1544562032311,
+              "level": "info",
+              "msg": "Session.sendTyping()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544562032316,
+              "level": "info",
+              "msg": "UniversalBot(\"*\") routing <null> from \"emulator\"",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544562032317,
+              "level": "info",
+              "msg": "Session.beginDialog(init)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544562032317,
+              "level": "info",
+              "msg": "waterfall() step 1 of 1",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544562032319,
+              "level": "info",
+              "msg": "Session.send()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544562032571,
+              "level": "info",
+              "msg": "Session.sendBatch() sending 2 message(s)",
+              "args": []
+            }
+          ],
+          "relatesTo": {
+            "id": "4bdae280-7cb7-43eb-a2f3-6bf6b5753fae",
+            "channelId": "emulator",
+            "user": {
+              "id": "fazzendapark",
+              "name": "Visitante"
+            },
+            "conversation": {
+              "id": "6bf36bb2-a834-40fc-b12b-3d1391338120"
+            },
+            "serviceUrl": "http://127.0.0.1:9002"
+          },
+          "text": "Debug Event",
+          "localTimestamp": "2018-12-11T21:00:32.596Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "000a3f86-0ee2-41cd-b737-a610513ba3e7",
+          "timestamp": "2018-12-11T21:00:32.599Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        }
+      ]
+    },
+    {
+      "conversationId": "19cc3507-fd5d-49df-9202-2fde774532f4",
+      "history": [
+        {
+          "type": "event",
+          "user": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "from": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "track": {
+            "botUserId": 803531315,
+            "mobile": false,
+            "companyId": "fazzendapark",
+            "page": "http://localhost:3000/botchatframe/teste-iframe.html?hotel=fazzendapark&urlhotel=http://www.fazzsenda.com.br/&local=true&new_direct_line=true",
+            "language": "pt-BR",
+            "browserData": {
+              "name": "Chrome",
+              "os": "Windows",
+              "os_version": "10",
+              "resolution": "1036x834"
+            }
+          },
+          "channelId": "emulator",
+          "serviceUrl": "http://127.0.0.1:9002",
+          "conversation": {
+            "id": "19cc3507-fd5d-49df-9202-2fde774532f4"
+          },
+          "id": "eabe2d00-586f-4fbb-951d-a0e8720715f9"
+        },
+        {
+          "type": "typing",
+          "localTimestamp": "2018-12-11T21:01:16.816Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "8ac73f79-442e-4929-ab85-a727c3e25af9",
+          "timestamp": "2018-12-11T21:01:16.820Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "message",
+          "text": "Seja bem-vindo ao Fazzenda Park Hotel! Eu sou o Gasparinho, o mascote do Fazzenda e estou aqui 24hr para  ajudá-lo no que for preciso! \n",
+          "attachments": [
+            {
+              "contentType": "application/vnd.microsoft.card.hero",
+              "content": {
+                "buttons": [
+                  {
+                    "type": "postBack",
+                    "value": "botaction?fazzendapark.reserva={\"label\":\"📅 Reservas\"}",
+                    "title": "📅 Reservas"
+                  },
+                  {
+                    "type": "postBack",
+                    "value": "botaction?fazzendapark.sobrehotel={\"label\":\"🛌 Sobre o Hotel\"}",
+                    "title": "🛌 Sobre o Hotel"
+                  },
+                  {
+                    "type": "postBack",
+                    "value": "botaction?fazzendapark.localizacao={\"label\":\"📍 Localização\"}",
+                    "title": "📍 Localização"
+                  },
+                  {
+                    "type": "postBack",
+                    "value": "botaction?fazzendapark.pacotes={\"label\":\"⛱ Pacotes\"}",
+                    "title": "⛱ Pacotes"
+                  },
+                  {
+                    "type": "postBack",
+                    "value": "botaction?fazzendapark.atracoes={\"label\":\"🎪 Atrações do Fazzenda\"}",
+                    "title": "🎪 Atrações do Fazzenda"
+                  }
+                ]
+              }
+            }
+          ],
+          "localTimestamp": "2018-12-11T21:01:16.827Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "inputHint": "acceptingInput",
+          "id": "f8c3f2f5-8e26-4580-afb0-18fefe3057d6",
+          "timestamp": "2018-12-11T21:01:16.830Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "event",
+          "name": "debug",
+          "value": [
+            {
+              "type": "log",
+              "timestamp": 1544562076558,
+              "level": "info",
+              "msg": "Session.sendTyping()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544562076560,
+              "level": "info",
+              "msg": "UniversalBot(\"*\") routing <null> from \"emulator\"",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544562076561,
+              "level": "info",
+              "msg": "Session.beginDialog(init)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544562076561,
+              "level": "info",
+              "msg": "waterfall() step 1 of 1",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544562076563,
+              "level": "info",
+              "msg": "Session.send()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544562076814,
+              "level": "info",
+              "msg": "Session.sendBatch() sending 2 message(s)",
+              "args": []
+            }
+          ],
+          "relatesTo": {
+            "id": "eabe2d00-586f-4fbb-951d-a0e8720715f9",
+            "channelId": "emulator",
+            "user": {
+              "id": "fazzendapark",
+              "name": "Visitante"
+            },
+            "conversation": {
+              "id": "19cc3507-fd5d-49df-9202-2fde774532f4"
+            },
+            "serviceUrl": "http://127.0.0.1:9002"
+          },
+          "text": "Debug Event",
+          "localTimestamp": "2018-12-11T21:01:16.840Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "ba4f4123-e601-47a1-85d8-e28b737d6c1f",
+          "timestamp": "2018-12-11T21:01:16.843Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        }
+      ]
+    },
+    {
+      "conversationId": "862a77ce-830b-4161-b2c5-a58fcbab8dec",
+      "history": [
+        {
+          "type": "event",
+          "user": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "from": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "track": {
+            "botUserId": 803531315,
+            "mobile": false,
+            "companyId": "fazzendapark",
+            "page": "http://localhost:3000/botchatframe/teste-iframe.html?hotel=fazzendapark&urlhotel=http://www.fazzsenda.com.br/&local=true&new_direct_line=true",
+            "language": "pt-BR",
+            "browserData": {
+              "name": "Chrome",
+              "os": "Windows",
+              "os_version": "10",
+              "resolution": "1036x834"
+            }
+          },
+          "channelId": "emulator",
+          "serviceUrl": "http://127.0.0.1:9002",
+          "conversation": {
+            "id": "862a77ce-830b-4161-b2c5-a58fcbab8dec"
+          },
+          "id": "d77a8360-d39f-42cb-a1e6-e3e9d03bd40f"
+        },
+        {
+          "type": "typing",
+          "localTimestamp": "2018-12-11T21:14:06.845Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "9bc67735-0520-4dc1-86d5-c9bdddba51b6",
+          "timestamp": "2018-12-11T21:14:06.855Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "message",
+          "text": "Seja bem-vindo ao Fazzenda Park Hotel! Eu sou o Gasparinho, o mascote do Fazzenda e estou aqui 24hr para  ajudá-lo no que for preciso! \n",
+          "attachments": [
+            {
+              "contentType": "application/vnd.microsoft.card.hero",
+              "content": {
+                "buttons": [
+                  {
+                    "type": "postBack",
+                    "value": "botaction?fazzendapark.reserva={\"label\":\"📅 Reservas\"}",
+                    "title": "📅 Reservas"
+                  },
+                  {
+                    "type": "postBack",
+                    "value": "botaction?fazzendapark.sobrehotel={\"label\":\"🛌 Sobre o Hotel\"}",
+                    "title": "🛌 Sobre o Hotel"
+                  },
+                  {
+                    "type": "postBack",
+                    "value": "botaction?fazzendapark.localizacao={\"label\":\"📍 Localização\"}",
+                    "title": "📍 Localização"
+                  },
+                  {
+                    "type": "postBack",
+                    "value": "botaction?fazzendapark.pacotes={\"label\":\"⛱ Pacotes\"}",
+                    "title": "⛱ Pacotes"
+                  },
+                  {
+                    "type": "postBack",
+                    "value": "botaction?fazzendapark.atracoes={\"label\":\"🎪 Atrações do Fazzenda\"}",
+                    "title": "🎪 Atrações do Fazzenda"
+                  }
+                ]
+              }
+            }
+          ],
+          "localTimestamp": "2018-12-11T21:14:06.870Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "inputHint": "acceptingInput",
+          "id": "4b5420a6-8907-43c8-b4e3-c0037ec7d63a",
+          "timestamp": "2018-12-11T21:14:06.874Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "event",
+          "name": "debug",
+          "value": [
+            {
+              "type": "log",
+              "timestamp": 1544562846586,
+              "level": "info",
+              "msg": "Session.sendTyping()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544562846588,
+              "level": "info",
+              "msg": "UniversalBot(\"*\") routing <null> from \"emulator\"",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544562846589,
+              "level": "info",
+              "msg": "Session.beginDialog(init)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544562846590,
+              "level": "info",
+              "msg": "waterfall() step 1 of 1",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544562846593,
+              "level": "info",
+              "msg": "Session.send()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544562846844,
+              "level": "info",
+              "msg": "Session.sendBatch() sending 2 message(s)",
+              "args": []
+            }
+          ],
+          "relatesTo": {
+            "id": "d77a8360-d39f-42cb-a1e6-e3e9d03bd40f",
+            "channelId": "emulator",
+            "user": {
+              "id": "fazzendapark",
+              "name": "Visitante"
+            },
+            "conversation": {
+              "id": "862a77ce-830b-4161-b2c5-a58fcbab8dec"
+            },
+            "serviceUrl": "http://127.0.0.1:9002"
+          },
+          "text": "Debug Event",
+          "localTimestamp": "2018-12-11T21:14:06.888Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "9034bfce-c2fa-434b-b1a9-d28b54724915",
+          "timestamp": "2018-12-11T21:14:06.892Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "typing",
+          "from": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "channelId": "emulator",
+          "serviceUrl": "http://127.0.0.1:9002",
+          "conversation": {
+            "id": "862a77ce-830b-4161-b2c5-a58fcbab8dec"
+          },
+          "id": "1f5d5988-eb70-4e7f-b518-79c7f59f355b"
+        },
+        {
+          "event": null,
+          "type": "message",
+          "text": "oi",
+          "from": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "locale": "pt-BR",
+          "textFormat": "plain",
+          "timestamp": "2018-12-11T21:14:10.256Z",
+          "channelData": {
+            "clientActivityId": "1544562846386.29153057137503424.0"
+          },
+          "entities": [
+            {
+              "type": "ClientCapabilities",
+              "requiresBotState": true,
+              "supportsTts": true,
+              "supportsListening": true
+            }
+          ],
+          "channelId": "emulator",
+          "serviceUrl": "http://127.0.0.1:9002",
+          "conversation": {
+            "id": "862a77ce-830b-4161-b2c5-a58fcbab8dec"
+          },
+          "id": "dfe12355-1b6e-44eb-a0c3-98820ac539ef"
+        },
+        {
+          "type": "typing",
+          "locale": "pt-BR",
+          "localTimestamp": "2018-12-11T21:14:11.154Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "d78f6fd0-68a2-4c7a-9f86-40bd51191bd4",
+          "timestamp": "2018-12-11T21:14:11.157Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "typing",
+          "locale": "pt-BR",
+          "localTimestamp": "2018-12-11T21:14:11.170Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "25dbac87-c1fb-4bef-973c-47423cc41d63",
+          "timestamp": "2018-12-11T21:14:11.171Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "message",
+          "text": "Oi, seja bem-vindo! Como posso ajudá-lo?",
+          "locale": "pt-BR",
+          "localTimestamp": "2018-12-11T21:14:11.183Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "inputHint": "acceptingInput",
+          "id": "61aa391e-20e0-43cc-9529-0f43dda44708",
+          "timestamp": "2018-12-11T21:14:11.184Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "event",
+          "name": "debug",
+          "value": [
+            {
+              "type": "log",
+              "timestamp": 1544562850281,
+              "level": "info",
+              "msg": "Session.sendTyping()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544562850284,
+              "level": "info",
+              "msg": "Session.sendTyping()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544562850902,
+              "level": "info",
+              "msg": "Session.send()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544562851153,
+              "level": "info",
+              "msg": "Session.sendBatch() sending 3 message(s)",
+              "args": []
+            }
+          ],
+          "relatesTo": {
+            "id": "dfe12355-1b6e-44eb-a0c3-98820ac539ef",
+            "channelId": "emulator",
+            "user": {
+              "id": "fazzendapark",
+              "name": "Visitante"
+            },
+            "conversation": {
+              "id": "862a77ce-830b-4161-b2c5-a58fcbab8dec"
+            },
+            "serviceUrl": "http://127.0.0.1:9002"
+          },
+          "text": "Debug Event",
+          "localTimestamp": "2018-12-11T21:14:11.197Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "5c86f58a-adb7-4217-9c23-c5c6fdb305d0",
+          "timestamp": "2018-12-11T21:14:11.199Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        }
+      ]
+    },
+    {
+      "conversationId": "406148d1-98f4-4078-ad37-f2ebc8d3d629",
+      "history": [
+        {
+          "type": "event",
+          "user": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "from": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "track": {
+            "botUserId": 803531315,
+            "mobile": false,
+            "companyId": "fazzendapark",
+            "page": "http://localhost:3000/botchatframe/teste-iframe.html?hotel=fazzendapark&urlhotel=http://www.fazzsenda.com.br/&local=true&new_direct_line=true",
+            "language": "pt-BR",
+            "browserData": {
+              "name": "Chrome",
+              "os": "Windows",
+              "os_version": "10",
+              "resolution": "1036x834"
+            }
+          },
+          "channelId": "emulator",
+          "serviceUrl": "http://127.0.0.1:9002",
+          "conversation": {
+            "id": "406148d1-98f4-4078-ad37-f2ebc8d3d629"
+          },
+          "id": "64c6871a-45cb-4be1-9bc9-0e79e2747b73"
+        },
+        {
+          "type": "typing",
+          "localTimestamp": "2018-12-11T21:15:25.716Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "35424b10-a56f-47db-abd2-2c1dfbbc4328",
+          "timestamp": "2018-12-11T21:15:25.722Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "message",
+          "text": "Seja bem-vindo ao Fazzenda Park Hotel! Eu sou o Gasparinho, o mascote do Fazzenda e estou aqui 24hr para  ajudá-lo no que for preciso! \n",
+          "attachments": [
+            {
+              "contentType": "application/vnd.microsoft.card.hero",
+              "content": {
+                "buttons": [
+                  {
+                    "type": "postBack",
+                    "value": "botaction?fazzendapark.reserva={\"label\":\"📅 Reservas\"}",
+                    "title": "📅 Reservas"
+                  },
+                  {
+                    "type": "postBack",
+                    "value": "botaction?fazzendapark.sobrehotel={\"label\":\"🛌 Sobre o Hotel\"}",
+                    "title": "🛌 Sobre o Hotel"
+                  },
+                  {
+                    "type": "postBack",
+                    "value": "botaction?fazzendapark.localizacao={\"label\":\"📍 Localização\"}",
+                    "title": "📍 Localização"
+                  },
+                  {
+                    "type": "postBack",
+                    "value": "botaction?fazzendapark.pacotes={\"label\":\"⛱ Pacotes\"}",
+                    "title": "⛱ Pacotes"
+                  },
+                  {
+                    "type": "postBack",
+                    "value": "botaction?fazzendapark.atracoes={\"label\":\"🎪 Atrações do Fazzenda\"}",
+                    "title": "🎪 Atrações do Fazzenda"
+                  }
+                ]
+              }
+            }
+          ],
+          "localTimestamp": "2018-12-11T21:15:25.737Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "inputHint": "acceptingInput",
+          "id": "dc87018f-bebd-48bd-9bb4-003e27674c6c",
+          "timestamp": "2018-12-11T21:15:25.740Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "event",
+          "name": "debug",
+          "value": [
+            {
+              "type": "log",
+              "timestamp": 1544562925457,
+              "level": "info",
+              "msg": "Session.sendTyping()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544562925459,
+              "level": "info",
+              "msg": "UniversalBot(\"*\") routing <null> from \"emulator\"",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544562925460,
+              "level": "info",
+              "msg": "Session.beginDialog(init)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544562925460,
+              "level": "info",
+              "msg": "waterfall() step 1 of 1",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544562925463,
+              "level": "info",
+              "msg": "Session.send()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544562925714,
+              "level": "info",
+              "msg": "Session.sendBatch() sending 2 message(s)",
+              "args": []
+            }
+          ],
+          "relatesTo": {
+            "id": "64c6871a-45cb-4be1-9bc9-0e79e2747b73",
+            "channelId": "emulator",
+            "user": {
+              "id": "fazzendapark",
+              "name": "Visitante"
+            },
+            "conversation": {
+              "id": "406148d1-98f4-4078-ad37-f2ebc8d3d629"
+            },
+            "serviceUrl": "http://127.0.0.1:9002"
+          },
+          "text": "Debug Event",
+          "localTimestamp": "2018-12-11T21:15:25.754Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "f12d3b0e-e601-400e-8faf-1caa60f1ac9f",
+          "timestamp": "2018-12-11T21:15:25.759Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "typing",
+          "from": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "channelId": "emulator",
+          "serviceUrl": "http://127.0.0.1:9002",
+          "conversation": {
+            "id": "406148d1-98f4-4078-ad37-f2ebc8d3d629"
+          },
+          "id": "a59b3fa6-dfa4-467c-9ce8-df2d3de23a9d"
+        },
+        {
+          "event": null,
+          "type": "message",
+          "text": "oi",
+          "from": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "locale": "pt-BR",
+          "textFormat": "plain",
+          "timestamp": "2018-12-11T21:15:28.736Z",
+          "channelData": {
+            "clientActivityId": "1544562925266.5095902912192785.0"
+          },
+          "entities": [
+            {
+              "type": "ClientCapabilities",
+              "requiresBotState": true,
+              "supportsTts": true,
+              "supportsListening": true
+            }
+          ],
+          "channelId": "emulator",
+          "serviceUrl": "http://127.0.0.1:9002",
+          "conversation": {
+            "id": "406148d1-98f4-4078-ad37-f2ebc8d3d629"
+          },
+          "id": "f3d81416-74ef-45f6-b192-184119b7286f"
+        },
+        {
+          "type": "typing",
+          "locale": "pt-BR",
+          "localTimestamp": "2018-12-11T21:15:29.380Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "98e434e3-6a80-45d9-a2a7-f56ef442b6a5",
+          "timestamp": "2018-12-11T21:15:29.384Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "typing",
+          "locale": "pt-BR",
+          "localTimestamp": "2018-12-11T21:15:29.422Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "8527d952-c1ad-44b4-a206-18350cd32d8f",
+          "timestamp": "2018-12-11T21:15:29.427Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "message",
+          "text": "Oi, seja bem-vindo! Como posso ajudá-lo?",
+          "locale": "pt-BR",
+          "localTimestamp": "2018-12-11T21:15:29.443Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "inputHint": "acceptingInput",
+          "id": "dd03aa4d-7c11-4bb2-bbda-0ff684f3f432",
+          "timestamp": "2018-12-11T21:15:29.444Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "event",
+          "name": "debug",
+          "value": [
+            {
+              "type": "log",
+              "timestamp": 1544562928765,
+              "level": "info",
+              "msg": "Session.sendTyping()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544562928774,
+              "level": "info",
+              "msg": "Session.sendTyping()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544562929129,
+              "level": "info",
+              "msg": "Session.send()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544562929379,
+              "level": "info",
+              "msg": "Session.sendBatch() sending 3 message(s)",
+              "args": []
+            }
+          ],
+          "relatesTo": {
+            "id": "f3d81416-74ef-45f6-b192-184119b7286f",
+            "channelId": "emulator",
+            "user": {
+              "id": "fazzendapark",
+              "name": "Visitante"
+            },
+            "conversation": {
+              "id": "406148d1-98f4-4078-ad37-f2ebc8d3d629"
+            },
+            "serviceUrl": "http://127.0.0.1:9002"
+          },
+          "text": "Debug Event",
+          "localTimestamp": "2018-12-11T21:15:29.458Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "b8c0e5d9-8b38-408b-9ff5-e9212279171b",
+          "timestamp": "2018-12-11T21:15:29.459Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        }
+      ]
+    },
+    {
+      "conversationId": "dce7f38d-b2da-4065-aca8-8a66f3f3ec87",
+      "history": [
+        {
+          "type": "event",
+          "user": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "from": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "track": {
+            "botUserId": 3029070268,
+            "mobile": false,
+            "companyId": "fazzendapark",
+            "page": "http://localhost:3000/botchatframe/teste-iframe.html?hotel=fazzendapark&urlhotel=http://www.fazzsenda.com.br/&local=true&new_direct_line=true",
+            "language": "pt-BR",
+            "browserData": {
+              "name": "Chrome",
+              "os": "Windows",
+              "os_version": "10",
+              "resolution": "1920x1080"
+            }
+          },
+          "channelId": "emulator",
+          "serviceUrl": "http://127.0.0.1:9002",
+          "conversation": {
+            "id": "dce7f38d-b2da-4065-aca8-8a66f3f3ec87"
+          },
+          "id": "83d48338-5a38-44fc-8561-463a872c8c33"
+        },
+        {
+          "type": "typing",
+          "localTimestamp": "2018-12-13T00:10:21.098Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "12d0f1b2-1d9f-4fb0-b92e-0b07efd87be1",
+          "timestamp": "2018-12-13T00:10:21.105Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "event",
+          "name": "debug",
+          "value": [
+            {
+              "type": "log",
+              "timestamp": 1544659820627,
+              "level": "info",
+              "msg": "Session.sendTyping()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544659820828,
+              "level": "info",
+              "msg": "UniversalBot(\"*\") routing <null> from \"emulator\"",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544659820832,
+              "level": "info",
+              "msg": "Session.beginDialog(init)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544659820833,
+              "level": "info",
+              "msg": "waterfall() step 1 of 1",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544659820843,
+              "level": "info",
+              "msg": "Session.send()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544659821095,
+              "level": "info",
+              "msg": "Session.sendBatch() sending 2 message(s)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544659821150,
+              "level": "info",
+              "msg": "Error: POST to 'http://127.0.0.1:9002/v3/conversations/dce7f38d-b2da-4065-aca8-8a66f3f3ec87/activities/83d48338-5a38-44fc-8561-463a872c8c33' failed: [500] Internal Server Error\n    at Request._callback (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\botbuilder\\lib\\bots\\ChatConnector.js:647:46)\n    at Request.self.callback (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:185:22)\n    at emitTwo (events.js:125:13)\n    at Request.emit (events.js:213:7)\n    at Request.<anonymous> (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:1161:10)\n    at emitOne (events.js:115:13)\n    at Request.emit (events.js:210:7)\n    at IncomingMessage.<anonymous> (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:1083:12)\n    at Object.onceWrapper (events.js:314:30)\n    at emitNone (events.js:110:20)\n    at IncomingMessage.emit (events.js:207:7)\n    at endReadableNT (_stream_readable.js:1047:12)\n    at _combinedTickCallback (internal/process/next_tick.js:102:11)\n    at process._tickDomainCallback (internal/process/next_tick.js:198:9)"
+            }
+          ],
+          "relatesTo": {
+            "id": "83d48338-5a38-44fc-8561-463a872c8c33",
+            "channelId": "emulator",
+            "user": {
+              "id": "fazzendapark",
+              "name": "Visitante"
+            },
+            "conversation": {
+              "id": "dce7f38d-b2da-4065-aca8-8a66f3f3ec87"
+            },
+            "serviceUrl": "http://127.0.0.1:9002"
+          },
+          "text": "Debug Event",
+          "localTimestamp": "2018-12-13T00:10:21.151Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "9651f865-0877-4844-939f-06c3baa96eae",
+          "timestamp": "2018-12-13T00:10:21.156Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        }
+      ]
+    },
+    {
+      "conversationId": "e442d3ac-ffe4-4911-9d0f-d01c7797a712",
+      "history": [
+        {
+          "type": "event",
+          "user": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "from": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "track": {
+            "botUserId": 3029070268,
+            "mobile": false,
+            "companyId": "fazzendapark",
+            "page": "http://localhost:3000/botchatframe/teste-iframe.html?hotel=fazzendapark&urlhotel=http://www.fazzsenda.com.br/&local=true&new_direct_line=true",
+            "language": "pt-BR",
+            "browserData": {
+              "name": "Chrome",
+              "os": "Windows",
+              "os_version": "10",
+              "resolution": "1920x1080"
+            }
+          },
+          "channelId": "emulator",
+          "serviceUrl": "http://127.0.0.1:9002",
+          "conversation": {
+            "id": "e442d3ac-ffe4-4911-9d0f-d01c7797a712"
+          },
+          "id": "d9325bc4-5515-4693-afdb-88d40628cce8"
+        },
+        {
+          "type": "typing",
+          "localTimestamp": "2018-12-13T00:10:57.008Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "965a785a-1857-4977-b8c3-5e9ce25ee67d",
+          "timestamp": "2018-12-13T00:10:57.017Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "event",
+          "name": "debug",
+          "value": [
+            {
+              "type": "log",
+              "timestamp": 1544659856753,
+              "level": "info",
+              "msg": "Session.sendTyping()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544659856755,
+              "level": "info",
+              "msg": "UniversalBot(\"*\") routing <null> from \"emulator\"",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544659856756,
+              "level": "info",
+              "msg": "Session.beginDialog(init)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544659856756,
+              "level": "info",
+              "msg": "waterfall() step 1 of 1",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544659856757,
+              "level": "info",
+              "msg": "Session.send()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544659857007,
+              "level": "info",
+              "msg": "Session.sendBatch() sending 2 message(s)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544659857060,
+              "level": "info",
+              "msg": "Error: POST to 'http://127.0.0.1:9002/v3/conversations/e442d3ac-ffe4-4911-9d0f-d01c7797a712/activities/d9325bc4-5515-4693-afdb-88d40628cce8' failed: [500] Internal Server Error\n    at Request._callback (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\botbuilder\\lib\\bots\\ChatConnector.js:647:46)\n    at Request.self.callback (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:185:22)\n    at emitTwo (events.js:125:13)\n    at Request.emit (events.js:213:7)\n    at Request.<anonymous> (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:1161:10)\n    at emitOne (events.js:115:13)\n    at Request.emit (events.js:210:7)\n    at IncomingMessage.<anonymous> (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:1083:12)\n    at Object.onceWrapper (events.js:314:30)\n    at emitNone (events.js:110:20)\n    at IncomingMessage.emit (events.js:207:7)\n    at endReadableNT (_stream_readable.js:1047:12)\n    at _combinedTickCallback (internal/process/next_tick.js:102:11)\n    at process._tickDomainCallback (internal/process/next_tick.js:198:9)"
+            }
+          ],
+          "relatesTo": {
+            "id": "d9325bc4-5515-4693-afdb-88d40628cce8",
+            "channelId": "emulator",
+            "user": {
+              "id": "fazzendapark",
+              "name": "Visitante"
+            },
+            "conversation": {
+              "id": "e442d3ac-ffe4-4911-9d0f-d01c7797a712"
+            },
+            "serviceUrl": "http://127.0.0.1:9002"
+          },
+          "text": "Debug Event",
+          "localTimestamp": "2018-12-13T00:10:57.060Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "c692e5be-0e13-4337-884a-eda57ca176e5",
+          "timestamp": "2018-12-13T00:10:57.063Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        }
+      ]
+    },
+    {
+      "conversationId": "4ff261e3-d979-4f2f-95a7-52a6bf79635a",
+      "history": [
+        {
+          "type": "event",
+          "user": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "from": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "track": {
+            "botUserId": 1247642714,
+            "mobile": false,
+            "companyId": "fazzendapark",
+            "page": "http://localhost:3000/botchatframe/teste-iframe.html?hotel=fazzendapark&urlhotel=http://www.fazzsenda.com.br/&local=true&new_direct_line=true",
+            "language": "pt-BR",
+            "browserData": {
+              "name": "Chrome",
+              "os": "Windows",
+              "os_version": "10",
+              "resolution": "592x831"
+            }
+          },
+          "channelId": "emulator",
+          "serviceUrl": "http://127.0.0.1:9002",
+          "conversation": {
+            "id": "4ff261e3-d979-4f2f-95a7-52a6bf79635a"
+          },
+          "id": "c3b34f38-5a9e-4d54-9dd5-4e510c3b6056"
+        },
+        {
+          "type": "typing",
+          "localTimestamp": "2018-12-13T00:11:18.087Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "9c55e765-1b98-4a78-81aa-c4df38a70885",
+          "timestamp": "2018-12-13T00:11:18.106Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "event",
+          "name": "debug",
+          "value": [
+            {
+              "type": "log",
+              "timestamp": 1544659877821,
+              "level": "info",
+              "msg": "Session.sendTyping()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544659877828,
+              "level": "info",
+              "msg": "UniversalBot(\"*\") routing <null> from \"emulator\"",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544659877831,
+              "level": "info",
+              "msg": "Session.beginDialog(init)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544659877831,
+              "level": "info",
+              "msg": "waterfall() step 1 of 1",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544659877836,
+              "level": "info",
+              "msg": "Session.send()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544659878086,
+              "level": "info",
+              "msg": "Session.sendBatch() sending 2 message(s)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544659878122,
+              "level": "info",
+              "msg": "Error: POST to 'http://127.0.0.1:9002/v3/conversations/4ff261e3-d979-4f2f-95a7-52a6bf79635a/activities/c3b34f38-5a9e-4d54-9dd5-4e510c3b6056' failed: [500] Internal Server Error\n    at Request._callback (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\botbuilder\\lib\\bots\\ChatConnector.js:647:46)\n    at Request.self.callback (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:185:22)\n    at emitTwo (events.js:125:13)\n    at Request.emit (events.js:213:7)\n    at Request.<anonymous> (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:1161:10)\n    at emitOne (events.js:115:13)\n    at Request.emit (events.js:210:7)\n    at IncomingMessage.<anonymous> (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:1083:12)\n    at Object.onceWrapper (events.js:314:30)\n    at emitNone (events.js:110:20)\n    at IncomingMessage.emit (events.js:207:7)\n    at endReadableNT (_stream_readable.js:1047:12)\n    at _combinedTickCallback (internal/process/next_tick.js:102:11)\n    at process._tickDomainCallback (internal/process/next_tick.js:198:9)"
+            }
+          ],
+          "relatesTo": {
+            "id": "c3b34f38-5a9e-4d54-9dd5-4e510c3b6056",
+            "channelId": "emulator",
+            "user": {
+              "id": "fazzendapark",
+              "name": "Visitante"
+            },
+            "conversation": {
+              "id": "4ff261e3-d979-4f2f-95a7-52a6bf79635a"
+            },
+            "serviceUrl": "http://127.0.0.1:9002"
+          },
+          "text": "Debug Event",
+          "localTimestamp": "2018-12-13T00:11:18.122Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "4c1de4b4-37b4-40d3-95b9-54c52a5d306c",
+          "timestamp": "2018-12-13T00:11:18.127Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        }
+      ]
+    },
+    {
+      "conversationId": "bf92f560-7219-4ed9-81a0-c0f156761658",
+      "history": [
+        {
+          "type": "event",
+          "user": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "from": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "track": {
+            "botUserId": 1247642714,
+            "mobile": false,
+            "companyId": "fazzendapark",
+            "page": "http://localhost:3000/botchatframe/teste-iframe.html?hotel=fazzendapark&urlhotel=http://www.fazzsenda.com.br/&local=true&new_direct_line=true",
+            "language": "pt-BR",
+            "browserData": {
+              "name": "Chrome",
+              "os": "Windows",
+              "os_version": "10",
+              "resolution": "592x831"
+            }
+          },
+          "channelId": "emulator",
+          "serviceUrl": "http://127.0.0.1:9002",
+          "conversation": {
+            "id": "bf92f560-7219-4ed9-81a0-c0f156761658"
+          },
+          "id": "b199f0b2-cd6a-405a-924c-86dd4aca8941"
+        },
+        {
+          "type": "typing",
+          "localTimestamp": "2018-12-13T00:13:35.924Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "bbfaaed1-a9a9-4a97-b5b5-e51293d0e6fc",
+          "timestamp": "2018-12-13T00:13:35.932Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "event",
+          "name": "debug",
+          "value": [
+            {
+              "type": "log",
+              "timestamp": 1544660015668,
+              "level": "info",
+              "msg": "Session.sendTyping()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660015670,
+              "level": "info",
+              "msg": "UniversalBot(\"*\") routing <null> from \"emulator\"",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660015670,
+              "level": "info",
+              "msg": "Session.beginDialog(init)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660015671,
+              "level": "info",
+              "msg": "waterfall() step 1 of 1",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660015673,
+              "level": "info",
+              "msg": "Session.send()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660015923,
+              "level": "info",
+              "msg": "Session.sendBatch() sending 2 message(s)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660015963,
+              "level": "info",
+              "msg": "Error: POST to 'http://127.0.0.1:9002/v3/conversations/bf92f560-7219-4ed9-81a0-c0f156761658/activities/b199f0b2-cd6a-405a-924c-86dd4aca8941' failed: [500] Internal Server Error\n    at Request._callback (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\botbuilder\\lib\\bots\\ChatConnector.js:647:46)\n    at Request.self.callback (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:185:22)\n    at emitTwo (events.js:125:13)\n    at Request.emit (events.js:213:7)\n    at Request.<anonymous> (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:1161:10)\n    at emitOne (events.js:115:13)\n    at Request.emit (events.js:210:7)\n    at IncomingMessage.<anonymous> (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:1083:12)\n    at Object.onceWrapper (events.js:314:30)\n    at emitNone (events.js:110:20)\n    at IncomingMessage.emit (events.js:207:7)\n    at endReadableNT (_stream_readable.js:1047:12)\n    at _combinedTickCallback (internal/process/next_tick.js:102:11)\n    at process._tickDomainCallback (internal/process/next_tick.js:198:9)"
+            }
+          ],
+          "relatesTo": {
+            "id": "b199f0b2-cd6a-405a-924c-86dd4aca8941",
+            "channelId": "emulator",
+            "user": {
+              "id": "fazzendapark",
+              "name": "Visitante"
+            },
+            "conversation": {
+              "id": "bf92f560-7219-4ed9-81a0-c0f156761658"
+            },
+            "serviceUrl": "http://127.0.0.1:9002"
+          },
+          "text": "Debug Event",
+          "localTimestamp": "2018-12-13T00:13:35.963Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "546e5d02-9fe0-4f15-bdd5-0ce58820f3f7",
+          "timestamp": "2018-12-13T00:13:35.965Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        }
+      ]
+    },
+    {
+      "conversationId": "44aacd39-8bb0-40da-acda-e1e16c50992a",
+      "history": [
+        {
+          "type": "event",
+          "user": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "from": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "track": {
+            "botUserId": 1247642714,
+            "mobile": false,
+            "companyId": "fazzendapark",
+            "page": "http://localhost:3000/botchatframe/teste-iframe.html?hotel=fazzendapark&urlhotel=http://www.fazzsenda.com.br/&local=true&new_direct_line=true",
+            "language": "pt-BR",
+            "browserData": {
+              "name": "Chrome",
+              "os": "Windows",
+              "os_version": "10",
+              "resolution": "592x831"
+            }
+          },
+          "channelId": "emulator",
+          "serviceUrl": "http://127.0.0.1:9002",
+          "conversation": {
+            "id": "44aacd39-8bb0-40da-acda-e1e16c50992a"
+          },
+          "id": "11f4d8d1-6d35-422c-94db-419e808b202d"
+        },
+        {
+          "type": "typing",
+          "localTimestamp": "2018-12-13T00:14:24.249Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "25613b68-cc64-45ed-83de-81e8388da950",
+          "timestamp": "2018-12-13T00:14:24.255Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "event",
+          "name": "debug",
+          "value": [
+            {
+              "type": "log",
+              "timestamp": 1544660063993,
+              "level": "info",
+              "msg": "Session.sendTyping()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660063995,
+              "level": "info",
+              "msg": "UniversalBot(\"*\") routing <null> from \"emulator\"",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660063995,
+              "level": "info",
+              "msg": "Session.beginDialog(init)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660063995,
+              "level": "info",
+              "msg": "waterfall() step 1 of 1",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660063998,
+              "level": "info",
+              "msg": "Session.send()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660064248,
+              "level": "info",
+              "msg": "Session.sendBatch() sending 2 message(s)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660064290,
+              "level": "info",
+              "msg": "Error: POST to 'http://127.0.0.1:9002/v3/conversations/44aacd39-8bb0-40da-acda-e1e16c50992a/activities/11f4d8d1-6d35-422c-94db-419e808b202d' failed: [500] Internal Server Error\n    at Request._callback (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\botbuilder\\lib\\bots\\ChatConnector.js:647:46)\n    at Request.self.callback (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:185:22)\n    at emitTwo (events.js:125:13)\n    at Request.emit (events.js:213:7)\n    at Request.<anonymous> (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:1161:10)\n    at emitOne (events.js:115:13)\n    at Request.emit (events.js:210:7)\n    at IncomingMessage.<anonymous> (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:1083:12)\n    at Object.onceWrapper (events.js:314:30)\n    at emitNone (events.js:110:20)\n    at IncomingMessage.emit (events.js:207:7)\n    at endReadableNT (_stream_readable.js:1047:12)\n    at _combinedTickCallback (internal/process/next_tick.js:102:11)\n    at process._tickDomainCallback (internal/process/next_tick.js:198:9)"
+            }
+          ],
+          "relatesTo": {
+            "id": "11f4d8d1-6d35-422c-94db-419e808b202d",
+            "channelId": "emulator",
+            "user": {
+              "id": "fazzendapark",
+              "name": "Visitante"
+            },
+            "conversation": {
+              "id": "44aacd39-8bb0-40da-acda-e1e16c50992a"
+            },
+            "serviceUrl": "http://127.0.0.1:9002"
+          },
+          "text": "Debug Event",
+          "localTimestamp": "2018-12-13T00:14:24.290Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "b42e47d6-2321-4a6f-94a0-178409389289",
+          "timestamp": "2018-12-13T00:14:24.294Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        }
+      ]
+    },
+    {
+      "conversationId": "917fbd2b-e7b4-4747-bbb0-408c9a22f3bf",
+      "history": [
+        {
+          "type": "event",
+          "user": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "from": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "track": {
+            "botUserId": 1247642714,
+            "mobile": false,
+            "companyId": "fazzendapark",
+            "page": "http://localhost:3000/botchatframe/teste-iframe.html?hotel=fazzendapark&urlhotel=http://www.fazzsenda.com.br/&local=true&new_direct_line=true",
+            "language": "pt-BR",
+            "browserData": {
+              "name": "Chrome",
+              "os": "Windows",
+              "os_version": "10",
+              "resolution": "592x831"
+            }
+          },
+          "channelId": "emulator",
+          "serviceUrl": "http://127.0.0.1:9002",
+          "conversation": {
+            "id": "917fbd2b-e7b4-4747-bbb0-408c9a22f3bf"
+          },
+          "id": "9465e708-5adc-47af-b2e4-7e8f73ff88e1"
+        },
+        {
+          "type": "typing",
+          "localTimestamp": "2018-12-13T00:15:49.712Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "329c810d-cba6-4c8a-b06c-214d42b75fe3",
+          "timestamp": "2018-12-13T00:15:49.715Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "event",
+          "name": "debug",
+          "value": [
+            {
+              "type": "log",
+              "timestamp": 1544660149244,
+              "level": "info",
+              "msg": "Session.sendTyping()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660149443,
+              "level": "info",
+              "msg": "UniversalBot(\"*\") routing <null> from \"emulator\"",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660149447,
+              "level": "info",
+              "msg": "Session.beginDialog(init)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660149447,
+              "level": "info",
+              "msg": "waterfall() step 1 of 1",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660149457,
+              "level": "info",
+              "msg": "Session.send()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660149710,
+              "level": "info",
+              "msg": "Session.sendBatch() sending 2 message(s)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660149729,
+              "level": "info",
+              "msg": "Error: POST to 'http://127.0.0.1:9002/v3/conversations/917fbd2b-e7b4-4747-bbb0-408c9a22f3bf/activities/9465e708-5adc-47af-b2e4-7e8f73ff88e1' failed: [500] Internal Server Error\n    at Request._callback (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\botbuilder\\lib\\bots\\ChatConnector.js:647:46)\n    at Request.self.callback (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:185:22)\n    at emitTwo (events.js:125:13)\n    at Request.emit (events.js:213:7)\n    at Request.<anonymous> (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:1161:10)\n    at emitOne (events.js:115:13)\n    at Request.emit (events.js:210:7)\n    at IncomingMessage.<anonymous> (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:1083:12)\n    at Object.onceWrapper (events.js:314:30)\n    at emitNone (events.js:110:20)\n    at IncomingMessage.emit (events.js:207:7)\n    at endReadableNT (_stream_readable.js:1047:12)\n    at _combinedTickCallback (internal/process/next_tick.js:102:11)\n    at process._tickDomainCallback (internal/process/next_tick.js:198:9)"
+            }
+          ],
+          "relatesTo": {
+            "id": "9465e708-5adc-47af-b2e4-7e8f73ff88e1",
+            "channelId": "emulator",
+            "user": {
+              "id": "fazzendapark",
+              "name": "Visitante"
+            },
+            "conversation": {
+              "id": "917fbd2b-e7b4-4747-bbb0-408c9a22f3bf"
+            },
+            "serviceUrl": "http://127.0.0.1:9002"
+          },
+          "text": "Debug Event",
+          "localTimestamp": "2018-12-13T00:15:49.730Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "96e7a504-ea89-4069-8251-ffd89479233e",
+          "timestamp": "2018-12-13T00:15:49.732Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        }
+      ]
+    },
+    {
+      "conversationId": "054d130b-7e9c-4287-9e3d-907e3d9a3c8c",
+      "history": [
+        {
+          "type": "event",
+          "user": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "from": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "track": {
+            "botUserId": 1247642714,
+            "mobile": false,
+            "companyId": "fazzendapark",
+            "page": "http://localhost:3000/botchatframe/teste-iframe.html?hotel=fazzendapark&urlhotel=http://www.fazzsenda.com.br/&local=true&new_direct_line=true",
+            "language": "pt-BR",
+            "browserData": {
+              "name": "Chrome",
+              "os": "Windows",
+              "os_version": "10",
+              "resolution": "592x831"
+            }
+          },
+          "channelId": "emulator",
+          "serviceUrl": "http://127.0.0.1:9002",
+          "conversation": {
+            "id": "054d130b-7e9c-4287-9e3d-907e3d9a3c8c"
+          },
+          "id": "a041bc73-38c1-4472-a93a-a2f61811c17f"
+        },
+        {
+          "type": "typing",
+          "localTimestamp": "2018-12-13T00:16:55.084Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "111a89d3-c1df-4dfc-abd3-08520fb7d2fd",
+          "timestamp": "2018-12-13T00:16:55.093Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "event",
+          "name": "debug",
+          "value": [
+            {
+              "type": "log",
+              "timestamp": 1544660214828,
+              "level": "info",
+              "msg": "Session.sendTyping()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660214830,
+              "level": "info",
+              "msg": "UniversalBot(\"*\") routing <null> from \"emulator\"",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660214831,
+              "level": "info",
+              "msg": "Session.beginDialog(init)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660214832,
+              "level": "info",
+              "msg": "waterfall() step 1 of 1",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660214833,
+              "level": "info",
+              "msg": "Session.send()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660215083,
+              "level": "info",
+              "msg": "Session.sendBatch() sending 2 message(s)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660215126,
+              "level": "info",
+              "msg": "Error: POST to 'http://127.0.0.1:9002/v3/conversations/054d130b-7e9c-4287-9e3d-907e3d9a3c8c/activities/a041bc73-38c1-4472-a93a-a2f61811c17f' failed: [500] Internal Server Error\n    at Request._callback (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\botbuilder\\lib\\bots\\ChatConnector.js:647:46)\n    at Request.self.callback (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:185:22)\n    at emitTwo (events.js:125:13)\n    at Request.emit (events.js:213:7)\n    at Request.<anonymous> (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:1161:10)\n    at emitOne (events.js:115:13)\n    at Request.emit (events.js:210:7)\n    at IncomingMessage.<anonymous> (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:1083:12)\n    at Object.onceWrapper (events.js:314:30)\n    at emitNone (events.js:110:20)\n    at IncomingMessage.emit (events.js:207:7)\n    at endReadableNT (_stream_readable.js:1047:12)\n    at _combinedTickCallback (internal/process/next_tick.js:102:11)\n    at process._tickDomainCallback (internal/process/next_tick.js:198:9)"
+            }
+          ],
+          "relatesTo": {
+            "id": "a041bc73-38c1-4472-a93a-a2f61811c17f",
+            "channelId": "emulator",
+            "user": {
+              "id": "fazzendapark",
+              "name": "Visitante"
+            },
+            "conversation": {
+              "id": "054d130b-7e9c-4287-9e3d-907e3d9a3c8c"
+            },
+            "serviceUrl": "http://127.0.0.1:9002"
+          },
+          "text": "Debug Event",
+          "localTimestamp": "2018-12-13T00:16:55.126Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "ee913d1a-a026-414a-9ff8-4760ce1a38dc",
+          "timestamp": "2018-12-13T00:16:55.129Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        }
+      ]
+    },
+    {
+      "conversationId": "51a5f151-ece9-4f33-889f-d7ac1a096ff3",
+      "history": [
+        {
+          "type": "event",
+          "user": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "from": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "track": {
+            "botUserId": 1247642714,
+            "mobile": false,
+            "companyId": "fazzendapark",
+            "page": "http://localhost:3000/botchatframe/teste-iframe.html?hotel=fazzendapark&urlhotel=http://www.fazzsenda.com.br/&local=true&new_direct_line=true",
+            "language": "pt-BR",
+            "browserData": {
+              "name": "Chrome",
+              "os": "Windows",
+              "os_version": "10",
+              "resolution": "592x831"
+            }
+          },
+          "channelId": "emulator",
+          "serviceUrl": "http://127.0.0.1:9002",
+          "conversation": {
+            "id": "51a5f151-ece9-4f33-889f-d7ac1a096ff3"
+          },
+          "id": "25600e2f-5eb9-4dd2-8c94-427fe1a6d917"
+        },
+        {
+          "type": "typing",
+          "localTimestamp": "2018-12-13T00:17:25.486Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "0338f1c0-8e88-4cf3-a00b-10a25f99b7fc",
+          "timestamp": "2018-12-13T00:17:25.491Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "event",
+          "name": "debug",
+          "value": [
+            {
+              "type": "log",
+              "timestamp": 1544660245226,
+              "level": "info",
+              "msg": "Session.sendTyping()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660245230,
+              "level": "info",
+              "msg": "UniversalBot(\"*\") routing <null> from \"emulator\"",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660245231,
+              "level": "info",
+              "msg": "Session.beginDialog(init)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660245231,
+              "level": "info",
+              "msg": "waterfall() step 1 of 1",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660245233,
+              "level": "info",
+              "msg": "Session.send()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660245485,
+              "level": "info",
+              "msg": "Session.sendBatch() sending 2 message(s)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660245530,
+              "level": "info",
+              "msg": "Error: POST to 'http://127.0.0.1:9002/v3/conversations/51a5f151-ece9-4f33-889f-d7ac1a096ff3/activities/25600e2f-5eb9-4dd2-8c94-427fe1a6d917' failed: [500] Internal Server Error\n    at Request._callback (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\botbuilder\\lib\\bots\\ChatConnector.js:647:46)\n    at Request.self.callback (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:185:22)\n    at emitTwo (events.js:125:13)\n    at Request.emit (events.js:213:7)\n    at Request.<anonymous> (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:1161:10)\n    at emitOne (events.js:115:13)\n    at Request.emit (events.js:210:7)\n    at IncomingMessage.<anonymous> (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:1083:12)\n    at Object.onceWrapper (events.js:314:30)\n    at emitNone (events.js:110:20)\n    at IncomingMessage.emit (events.js:207:7)\n    at endReadableNT (_stream_readable.js:1047:12)\n    at _combinedTickCallback (internal/process/next_tick.js:102:11)\n    at process._tickDomainCallback (internal/process/next_tick.js:198:9)"
+            }
+          ],
+          "relatesTo": {
+            "id": "25600e2f-5eb9-4dd2-8c94-427fe1a6d917",
+            "channelId": "emulator",
+            "user": {
+              "id": "fazzendapark",
+              "name": "Visitante"
+            },
+            "conversation": {
+              "id": "51a5f151-ece9-4f33-889f-d7ac1a096ff3"
+            },
+            "serviceUrl": "http://127.0.0.1:9002"
+          },
+          "text": "Debug Event",
+          "localTimestamp": "2018-12-13T00:17:25.530Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "13450c83-380d-45b1-8009-c8d0aa977a9e",
+          "timestamp": "2018-12-13T00:17:25.536Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        }
+      ]
+    },
+    {
+      "conversationId": "924ecfc1-1f6a-4cd1-aac3-9f39f7417e9e",
+      "history": [
+        {
+          "type": "event",
+          "user": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "from": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "track": {
+            "botUserId": 1247642714,
+            "mobile": false,
+            "companyId": "fazzendapark",
+            "page": "http://localhost:3000/botchatframe/teste-iframe.html?hotel=fazzendapark&urlhotel=http://www.fazzsenda.com.br/&local=true&new_direct_line=true",
+            "language": "pt-BR",
+            "browserData": {
+              "name": "Chrome",
+              "os": "Windows",
+              "os_version": "10",
+              "resolution": "592x831"
+            }
+          },
+          "channelId": "emulator",
+          "serviceUrl": "http://127.0.0.1:9002",
+          "conversation": {
+            "id": "924ecfc1-1f6a-4cd1-aac3-9f39f7417e9e"
+          },
+          "id": "8466b2ce-7f4e-4b48-a0d5-ca541c42fc09"
+        },
+        {
+          "type": "typing",
+          "localTimestamp": "2018-12-13T00:18:00.443Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "e00cb401-f94f-42a2-954d-e05c22b1098e",
+          "timestamp": "2018-12-13T00:18:00.450Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "event",
+          "name": "debug",
+          "value": [
+            {
+              "type": "log",
+              "timestamp": 1544660280181,
+              "level": "info",
+              "msg": "Session.sendTyping()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660280184,
+              "level": "info",
+              "msg": "UniversalBot(\"*\") routing <null> from \"emulator\"",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660280185,
+              "level": "info",
+              "msg": "Session.beginDialog(init)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660280185,
+              "level": "info",
+              "msg": "waterfall() step 1 of 1",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660280189,
+              "level": "info",
+              "msg": "Session.send()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660280442,
+              "level": "info",
+              "msg": "Session.sendBatch() sending 2 message(s)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660280484,
+              "level": "info",
+              "msg": "Error: POST to 'http://127.0.0.1:9002/v3/conversations/924ecfc1-1f6a-4cd1-aac3-9f39f7417e9e/activities/8466b2ce-7f4e-4b48-a0d5-ca541c42fc09' failed: [500] Internal Server Error\n    at Request._callback (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\botbuilder\\lib\\bots\\ChatConnector.js:647:46)\n    at Request.self.callback (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:185:22)\n    at emitTwo (events.js:125:13)\n    at Request.emit (events.js:213:7)\n    at Request.<anonymous> (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:1161:10)\n    at emitOne (events.js:115:13)\n    at Request.emit (events.js:210:7)\n    at IncomingMessage.<anonymous> (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:1083:12)\n    at Object.onceWrapper (events.js:314:30)\n    at emitNone (events.js:110:20)\n    at IncomingMessage.emit (events.js:207:7)\n    at endReadableNT (_stream_readable.js:1047:12)\n    at _combinedTickCallback (internal/process/next_tick.js:102:11)\n    at process._tickDomainCallback (internal/process/next_tick.js:198:9)"
+            }
+          ],
+          "relatesTo": {
+            "id": "8466b2ce-7f4e-4b48-a0d5-ca541c42fc09",
+            "channelId": "emulator",
+            "user": {
+              "id": "fazzendapark",
+              "name": "Visitante"
+            },
+            "conversation": {
+              "id": "924ecfc1-1f6a-4cd1-aac3-9f39f7417e9e"
+            },
+            "serviceUrl": "http://127.0.0.1:9002"
+          },
+          "text": "Debug Event",
+          "localTimestamp": "2018-12-13T00:18:00.484Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "a4179784-88a5-4fa3-ab16-86afeebefc2c",
+          "timestamp": "2018-12-13T00:18:00.488Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        }
+      ]
+    },
+    {
+      "conversationId": "3ae07021-c867-4d44-bf32-8c687d1a3650",
+      "history": [
+        {
+          "type": "event",
+          "user": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "from": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "track": {
+            "botUserId": 1247642714,
+            "mobile": false,
+            "companyId": "fazzendapark",
+            "page": "http://localhost:3000/botchatframe/teste-iframe.html?hotel=fazzendapark&urlhotel=http://www.fazzsenda.com.br/&local=true&new_direct_line=true",
+            "language": "pt-BR",
+            "browserData": {
+              "name": "Chrome",
+              "os": "Windows",
+              "os_version": "10",
+              "resolution": "592x831"
+            }
+          },
+          "channelId": "emulator",
+          "serviceUrl": "http://127.0.0.1:9002",
+          "conversation": {
+            "id": "3ae07021-c867-4d44-bf32-8c687d1a3650"
+          },
+          "id": "727dff71-cb60-4cd1-97b5-35532cb19d74"
+        },
+        {
+          "type": "typing",
+          "localTimestamp": "2018-12-13T00:19:28.354Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "ef7e3784-ed98-4ee7-8e4d-c9c8054572fc",
+          "timestamp": "2018-12-13T00:19:28.361Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "event",
+          "name": "debug",
+          "value": [
+            {
+              "type": "log",
+              "timestamp": 1544660368097,
+              "level": "info",
+              "msg": "Session.sendTyping()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660368099,
+              "level": "info",
+              "msg": "UniversalBot(\"*\") routing <null> from \"emulator\"",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660368099,
+              "level": "info",
+              "msg": "Session.beginDialog(init)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660368100,
+              "level": "info",
+              "msg": "waterfall() step 1 of 1",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660368102,
+              "level": "info",
+              "msg": "Session.send()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660368353,
+              "level": "info",
+              "msg": "Session.sendBatch() sending 2 message(s)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660368400,
+              "level": "info",
+              "msg": "Error: POST to 'http://127.0.0.1:9002/v3/conversations/3ae07021-c867-4d44-bf32-8c687d1a3650/activities/727dff71-cb60-4cd1-97b5-35532cb19d74' failed: [500] Internal Server Error\n    at Request._callback (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\botbuilder\\lib\\bots\\ChatConnector.js:647:46)\n    at Request.self.callback (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:185:22)\n    at emitTwo (events.js:125:13)\n    at Request.emit (events.js:213:7)\n    at Request.<anonymous> (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:1161:10)\n    at emitOne (events.js:115:13)\n    at Request.emit (events.js:210:7)\n    at IncomingMessage.<anonymous> (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:1083:12)\n    at Object.onceWrapper (events.js:314:30)\n    at emitNone (events.js:110:20)\n    at IncomingMessage.emit (events.js:207:7)\n    at endReadableNT (_stream_readable.js:1047:12)\n    at _combinedTickCallback (internal/process/next_tick.js:102:11)\n    at process._tickDomainCallback (internal/process/next_tick.js:198:9)"
+            }
+          ],
+          "relatesTo": {
+            "id": "727dff71-cb60-4cd1-97b5-35532cb19d74",
+            "channelId": "emulator",
+            "user": {
+              "id": "fazzendapark",
+              "name": "Visitante"
+            },
+            "conversation": {
+              "id": "3ae07021-c867-4d44-bf32-8c687d1a3650"
+            },
+            "serviceUrl": "http://127.0.0.1:9002"
+          },
+          "text": "Debug Event",
+          "localTimestamp": "2018-12-13T00:19:28.401Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "885e0b71-53d6-4723-9ae4-e1e769bbb8e2",
+          "timestamp": "2018-12-13T00:19:28.404Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        }
+      ]
+    },
+    {
+      "conversationId": "d3660e9f-458a-4128-8b8e-c3341294fb1a",
+      "history": [
+        {
+          "type": "event",
+          "user": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "from": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "track": {
+            "botUserId": 1247642714,
+            "mobile": false,
+            "companyId": "fazzendapark",
+            "page": "http://localhost:3000/botchatframe/teste-iframe.html?hotel=fazzendapark&urlhotel=http://www.fazzsenda.com.br/&local=true&new_direct_line=true",
+            "language": "pt-BR",
+            "browserData": {
+              "name": "Chrome",
+              "os": "Windows",
+              "os_version": "10",
+              "resolution": "592x831"
+            }
+          },
+          "channelId": "emulator",
+          "serviceUrl": "http://127.0.0.1:9002",
+          "conversation": {
+            "id": "d3660e9f-458a-4128-8b8e-c3341294fb1a"
+          },
+          "id": "8aa6257e-cbe1-48dd-be68-171cbc65a351"
+        },
+        {
+          "type": "typing",
+          "localTimestamp": "2018-12-13T00:21:00.044Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "560738c2-140a-47e3-9af4-75a6f0305bb0",
+          "timestamp": "2018-12-13T00:21:00.049Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "event",
+          "name": "debug",
+          "value": [
+            {
+              "type": "log",
+              "timestamp": 1544660459784,
+              "level": "info",
+              "msg": "Session.sendTyping()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660459787,
+              "level": "info",
+              "msg": "UniversalBot(\"*\") routing <null> from \"emulator\"",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660459788,
+              "level": "info",
+              "msg": "Session.beginDialog(init)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660459789,
+              "level": "info",
+              "msg": "waterfall() step 1 of 1",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660459791,
+              "level": "info",
+              "msg": "Session.send()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660460043,
+              "level": "info",
+              "msg": "Session.sendBatch() sending 2 message(s)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660460082,
+              "level": "info",
+              "msg": "Error: POST to 'http://127.0.0.1:9002/v3/conversations/d3660e9f-458a-4128-8b8e-c3341294fb1a/activities/8aa6257e-cbe1-48dd-be68-171cbc65a351' failed: [500] Internal Server Error\n    at Request._callback (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\botbuilder\\lib\\bots\\ChatConnector.js:647:46)\n    at Request.self.callback (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:185:22)\n    at emitTwo (events.js:125:13)\n    at Request.emit (events.js:213:7)\n    at Request.<anonymous> (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:1161:10)\n    at emitOne (events.js:115:13)\n    at Request.emit (events.js:210:7)\n    at IncomingMessage.<anonymous> (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:1083:12)\n    at Object.onceWrapper (events.js:314:30)\n    at emitNone (events.js:110:20)\n    at IncomingMessage.emit (events.js:207:7)\n    at endReadableNT (_stream_readable.js:1047:12)\n    at _combinedTickCallback (internal/process/next_tick.js:102:11)\n    at process._tickDomainCallback (internal/process/next_tick.js:198:9)"
+            }
+          ],
+          "relatesTo": {
+            "id": "8aa6257e-cbe1-48dd-be68-171cbc65a351",
+            "channelId": "emulator",
+            "user": {
+              "id": "fazzendapark",
+              "name": "Visitante"
+            },
+            "conversation": {
+              "id": "d3660e9f-458a-4128-8b8e-c3341294fb1a"
+            },
+            "serviceUrl": "http://127.0.0.1:9002"
+          },
+          "text": "Debug Event",
+          "localTimestamp": "2018-12-13T00:21:00.082Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "f9a3b8ac-3edc-4281-b024-9b14b8d71b68",
+          "timestamp": "2018-12-13T00:21:00.086Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        }
+      ]
+    },
+    {
+      "conversationId": "6e2f5c7b-1ea3-4289-99dc-50422701eb04",
+      "history": [
+        {
+          "type": "event",
+          "user": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "from": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "track": {
+            "botUserId": 2062834102,
+            "mobile": false,
+            "companyId": "fazzendapark",
+            "page": "http://localhost:3000/botchatframe/teste-iframe.html?hotel=fazzendapark&urlhotel=http://www.fazzsenda.com.br/&local=true&new_direct_line=true",
+            "language": "pt-BR",
+            "browserData": {
+              "name": "Chrome",
+              "os": "Windows",
+              "os_version": "10",
+              "resolution": "439x831"
+            }
+          },
+          "channelId": "emulator",
+          "serviceUrl": "http://127.0.0.1:9002",
+          "conversation": {
+            "id": "6e2f5c7b-1ea3-4289-99dc-50422701eb04"
+          },
+          "id": "6922916a-0bd0-4535-ab63-b9026b1b7269"
+        },
+        {
+          "type": "typing",
+          "localTimestamp": "2018-12-13T00:24:17.631Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "bfaf0712-5ae9-4c94-a2e5-409701b4a566",
+          "timestamp": "2018-12-13T00:24:17.634Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "event",
+          "name": "debug",
+          "value": [
+            {
+              "type": "log",
+              "timestamp": 1544660657376,
+              "level": "info",
+              "msg": "Session.sendTyping()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660657377,
+              "level": "info",
+              "msg": "UniversalBot(\"*\") routing <null> from \"emulator\"",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660657377,
+              "level": "info",
+              "msg": "Session.beginDialog(init)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660657378,
+              "level": "info",
+              "msg": "waterfall() step 1 of 1",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660657379,
+              "level": "info",
+              "msg": "Session.send()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660657630,
+              "level": "info",
+              "msg": "Session.sendBatch() sending 2 message(s)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660657674,
+              "level": "info",
+              "msg": "Error: POST to 'http://127.0.0.1:9002/v3/conversations/6e2f5c7b-1ea3-4289-99dc-50422701eb04/activities/6922916a-0bd0-4535-ab63-b9026b1b7269' failed: [500] Internal Server Error\n    at Request._callback (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\botbuilder\\lib\\bots\\ChatConnector.js:647:46)\n    at Request.self.callback (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:185:22)\n    at emitTwo (events.js:125:13)\n    at Request.emit (events.js:213:7)\n    at Request.<anonymous> (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:1161:10)\n    at emitOne (events.js:115:13)\n    at Request.emit (events.js:210:7)\n    at IncomingMessage.<anonymous> (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:1083:12)\n    at Object.onceWrapper (events.js:314:30)\n    at emitNone (events.js:110:20)\n    at IncomingMessage.emit (events.js:207:7)\n    at endReadableNT (_stream_readable.js:1047:12)\n    at _combinedTickCallback (internal/process/next_tick.js:102:11)\n    at process._tickDomainCallback (internal/process/next_tick.js:198:9)"
+            }
+          ],
+          "relatesTo": {
+            "id": "6922916a-0bd0-4535-ab63-b9026b1b7269",
+            "channelId": "emulator",
+            "user": {
+              "id": "fazzendapark",
+              "name": "Visitante"
+            },
+            "conversation": {
+              "id": "6e2f5c7b-1ea3-4289-99dc-50422701eb04"
+            },
+            "serviceUrl": "http://127.0.0.1:9002"
+          },
+          "text": "Debug Event",
+          "localTimestamp": "2018-12-13T00:24:17.674Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "1de4ebd6-b5bb-405b-a8cf-81cda627ee47",
+          "timestamp": "2018-12-13T00:24:17.677Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        }
+      ]
+    },
+    {
+      "conversationId": "92a715ee-02b3-482e-ba02-de69b5fecf64",
+      "history": [
+        {
+          "type": "event",
+          "user": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "from": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "track": {
+            "botUserId": 2062834102,
+            "mobile": false,
+            "companyId": "fazzendapark",
+            "page": "http://localhost:3000/botchatframe/teste-iframe.html?hotel=fazzendapark&urlhotel=http://www.fazzsenda.com.br/&local=true&new_direct_line=true",
+            "language": "pt-BR",
+            "browserData": {
+              "name": "Chrome",
+              "os": "Windows",
+              "os_version": "10",
+              "resolution": "439x831"
+            }
+          },
+          "channelId": "emulator",
+          "serviceUrl": "http://127.0.0.1:9002",
+          "conversation": {
+            "id": "92a715ee-02b3-482e-ba02-de69b5fecf64"
+          },
+          "id": "2f8d8b61-0e02-402a-9676-69603faa68c4"
+        },
+        {
+          "type": "typing",
+          "localTimestamp": "2018-12-13T00:26:02.219Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "8b943230-85e3-4999-9aa1-100c924cb840",
+          "timestamp": "2018-12-13T00:26:02.223Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "event",
+          "name": "debug",
+          "value": [
+            {
+              "type": "log",
+              "timestamp": 1544660761964,
+              "level": "info",
+              "msg": "Session.sendTyping()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660761965,
+              "level": "info",
+              "msg": "UniversalBot(\"*\") routing <null> from \"emulator\"",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660761966,
+              "level": "info",
+              "msg": "Session.beginDialog(init)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660761966,
+              "level": "info",
+              "msg": "waterfall() step 1 of 1",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660761967,
+              "level": "info",
+              "msg": "Session.send()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660762218,
+              "level": "info",
+              "msg": "Session.sendBatch() sending 2 message(s)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660762266,
+              "level": "info",
+              "msg": "Error: POST to 'http://127.0.0.1:9002/v3/conversations/92a715ee-02b3-482e-ba02-de69b5fecf64/activities/2f8d8b61-0e02-402a-9676-69603faa68c4' failed: [500] Internal Server Error\n    at Request._callback (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\botbuilder\\lib\\bots\\ChatConnector.js:647:46)\n    at Request.self.callback (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:185:22)\n    at emitTwo (events.js:125:13)\n    at Request.emit (events.js:213:7)\n    at Request.<anonymous> (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:1161:10)\n    at emitOne (events.js:115:13)\n    at Request.emit (events.js:210:7)\n    at IncomingMessage.<anonymous> (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:1083:12)\n    at Object.onceWrapper (events.js:314:30)\n    at emitNone (events.js:110:20)\n    at IncomingMessage.emit (events.js:207:7)\n    at endReadableNT (_stream_readable.js:1047:12)\n    at _combinedTickCallback (internal/process/next_tick.js:102:11)\n    at process._tickDomainCallback (internal/process/next_tick.js:198:9)"
+            }
+          ],
+          "relatesTo": {
+            "id": "2f8d8b61-0e02-402a-9676-69603faa68c4",
+            "channelId": "emulator",
+            "user": {
+              "id": "fazzendapark",
+              "name": "Visitante"
+            },
+            "conversation": {
+              "id": "92a715ee-02b3-482e-ba02-de69b5fecf64"
+            },
+            "serviceUrl": "http://127.0.0.1:9002"
+          },
+          "text": "Debug Event",
+          "localTimestamp": "2018-12-13T00:26:02.266Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "6d062432-fbe3-45b3-ab84-2f4f51583a1d",
+          "timestamp": "2018-12-13T00:26:02.269Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        }
+      ]
+    },
+    {
+      "conversationId": "d3a23877-349e-4fed-a0cf-bfe10afc9e6e",
+      "history": [
+        {
+          "type": "event",
+          "user": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "from": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "track": {
+            "botUserId": 2062834102,
+            "mobile": false,
+            "companyId": "fazzendapark",
+            "page": "http://localhost:3000/botchatframe/teste-iframe.html?hotel=fazzendapark&urlhotel=http://www.fazzsenda.com.br/&local=true&new_direct_line=true",
+            "language": "pt-BR",
+            "browserData": {
+              "name": "Chrome",
+              "os": "Windows",
+              "os_version": "10",
+              "resolution": "439x831"
+            }
+          },
+          "channelId": "emulator",
+          "serviceUrl": "http://127.0.0.1:9002",
+          "conversation": {
+            "id": "d3a23877-349e-4fed-a0cf-bfe10afc9e6e"
+          },
+          "id": "7341ea7a-2e55-4c0f-b0dc-a81531c0a3ab"
+        },
+        {
+          "type": "typing",
+          "localTimestamp": "2018-12-13T00:26:34.549Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "d3a6d558-a593-48ed-81bc-b3aa7a2f43d0",
+          "timestamp": "2018-12-13T00:26:34.553Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "event",
+          "name": "debug",
+          "value": [
+            {
+              "type": "log",
+              "timestamp": 1544660794281,
+              "level": "info",
+              "msg": "Session.sendTyping()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660794296,
+              "level": "info",
+              "msg": "UniversalBot(\"*\") routing <null> from \"emulator\"",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660794297,
+              "level": "info",
+              "msg": "Session.beginDialog(init)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660794298,
+              "level": "info",
+              "msg": "waterfall() step 1 of 1",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660794299,
+              "level": "info",
+              "msg": "Session.send()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660794549,
+              "level": "info",
+              "msg": "Session.sendBatch() sending 2 message(s)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660794592,
+              "level": "info",
+              "msg": "Error: POST to 'http://127.0.0.1:9002/v3/conversations/d3a23877-349e-4fed-a0cf-bfe10afc9e6e/activities/7341ea7a-2e55-4c0f-b0dc-a81531c0a3ab' failed: [500] Internal Server Error\n    at Request._callback (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\botbuilder\\lib\\bots\\ChatConnector.js:647:46)\n    at Request.self.callback (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:185:22)\n    at emitTwo (events.js:125:13)\n    at Request.emit (events.js:213:7)\n    at Request.<anonymous> (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:1161:10)\n    at emitOne (events.js:115:13)\n    at Request.emit (events.js:210:7)\n    at IncomingMessage.<anonymous> (C:\\Users\\Avell\\projetos\\infochat\\node_modules\\request\\request.js:1083:12)\n    at Object.onceWrapper (events.js:314:30)\n    at emitNone (events.js:110:20)\n    at IncomingMessage.emit (events.js:207:7)\n    at endReadableNT (_stream_readable.js:1047:12)\n    at _combinedTickCallback (internal/process/next_tick.js:102:11)\n    at process._tickDomainCallback (internal/process/next_tick.js:198:9)"
+            }
+          ],
+          "relatesTo": {
+            "id": "7341ea7a-2e55-4c0f-b0dc-a81531c0a3ab",
+            "channelId": "emulator",
+            "user": {
+              "id": "fazzendapark",
+              "name": "Visitante"
+            },
+            "conversation": {
+              "id": "d3a23877-349e-4fed-a0cf-bfe10afc9e6e"
+            },
+            "serviceUrl": "http://127.0.0.1:9002"
+          },
+          "text": "Debug Event",
+          "localTimestamp": "2018-12-13T00:26:34.592Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "3f61685e-f8e4-44c7-96d3-0d6d95c2835e",
+          "timestamp": "2018-12-13T00:26:34.595Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        }
+      ]
+    },
+    {
+      "conversationId": "ac728b75-cf9a-41cc-a191-1c9727c39245",
+      "history": [
+        {
+          "type": "event",
+          "user": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "from": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "track": {
+            "botUserId": 2062834102,
+            "mobile": false,
+            "companyId": "fazzendapark",
+            "page": "http://localhost:3000/botchatframe/teste-iframe.html?hotel=fazzendapark&urlhotel=http://www.fazzsenda.com.br/&local=true&new_direct_line=true",
+            "language": "pt-BR",
+            "browserData": {
+              "name": "Chrome",
+              "os": "Windows",
+              "os_version": "10",
+              "resolution": "439x831"
+            }
+          },
+          "channelId": "emulator",
+          "serviceUrl": "http://127.0.0.1:9002",
+          "conversation": {
+            "id": "ac728b75-cf9a-41cc-a191-1c9727c39245"
+          },
+          "id": "cea20cea-cb7b-4b15-8aa8-e7a91c019462"
+        },
+        {
+          "type": "typing",
+          "localTimestamp": "2018-12-13T00:27:43.369Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "c41fe014-6534-4051-9a54-05ca2b308fc8",
+          "timestamp": "2018-12-13T00:27:43.371Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "message",
+          "text": "Seja bem-vindo ao Fazzenda Park Hotel! Eu sou o Gasparinho, o mascote do Fazzenda e estou aqui 24hr para  ajudá-lo no que for preciso! \n",
+          "attachments": [
+            {
+              "contentType": "application/vnd.microsoft.card.hero",
+              "content": {
+                "buttons": [
+                  {
+                    "type": "postBack",
+                    "value": "botaction?fazzendapark.reserva={\"label\":\"📅 Reservas\"}",
+                    "title": "📅 Reservas"
+                  },
+                  {
+                    "type": "postBack",
+                    "value": "botaction?fazzendapark.sobrehotel={\"label\":\"🛌 Sobre o Hotel\"}",
+                    "title": "🛌 Sobre o Hotel"
+                  },
+                  {
+                    "type": "postBack",
+                    "value": "botaction?fazzendapark.localizacao={\"label\":\"📍 Localização\"}",
+                    "title": "📍 Localização"
+                  },
+                  {
+                    "type": "postBack",
+                    "value": "botaction?fazzendapark.pacotes={\"label\":\"⛱ Pacotes\"}",
+                    "title": "⛱ Pacotes"
+                  },
+                  {
+                    "type": "postBack",
+                    "value": "botaction?fazzendapark.atracoes={\"label\":\"🎪 Atrações do Fazzenda\"}",
+                    "title": "🎪 Atrações do Fazzenda"
+                  }
+                ]
+              }
+            }
+          ],
+          "localTimestamp": "2018-12-13T00:27:43.388Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "inputHint": "acceptingInput",
+          "id": "0c3f8baf-218b-4fa9-bdf8-8ee3bbc718dc",
+          "timestamp": "2018-12-13T00:27:43.389Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "event",
+          "name": "debug",
+          "value": [
+            {
+              "type": "log",
+              "timestamp": 1544660863114,
+              "level": "info",
+              "msg": "Session.sendTyping()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660863115,
+              "level": "info",
+              "msg": "UniversalBot(\"*\") routing <null> from \"emulator\"",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660863116,
+              "level": "info",
+              "msg": "Session.beginDialog(init)",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660863116,
+              "level": "info",
+              "msg": "waterfall() step 1 of 1",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660863117,
+              "level": "info",
+              "msg": "Session.send()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660863368,
+              "level": "info",
+              "msg": "Session.sendBatch() sending 2 message(s)",
+              "args": []
+            }
+          ],
+          "relatesTo": {
+            "id": "cea20cea-cb7b-4b15-8aa8-e7a91c019462",
+            "channelId": "emulator",
+            "user": {
+              "id": "fazzendapark",
+              "name": "Visitante"
+            },
+            "conversation": {
+              "id": "ac728b75-cf9a-41cc-a191-1c9727c39245"
+            },
+            "serviceUrl": "http://127.0.0.1:9002"
+          },
+          "text": "Debug Event",
+          "localTimestamp": "2018-12-13T00:27:43.419Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "7cf3f612-ba03-46c0-9127-c194e281e869",
+          "timestamp": "2018-12-13T00:27:43.421Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "typing",
+          "from": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "channelId": "emulator",
+          "serviceUrl": "http://127.0.0.1:9002",
+          "conversation": {
+            "id": "ac728b75-cf9a-41cc-a191-1c9727c39245"
+          },
+          "id": "18645a66-5217-4635-9cee-31dc710276f2"
+        },
+        {
+          "event": null,
+          "type": "message",
+          "text": "oi",
+          "from": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "locale": "pt-BR",
+          "textFormat": "plain",
+          "timestamp": "2018-12-13T00:27:51.128Z",
+          "channelData": {
+            "clientActivityId": "1544660862936.23702804010383693.0"
+          },
+          "entities": [
+            {
+              "type": "ClientCapabilities",
+              "requiresBotState": true,
+              "supportsTts": true,
+              "supportsListening": true
+            }
+          ],
+          "channelId": "emulator",
+          "serviceUrl": "http://127.0.0.1:9002",
+          "conversation": {
+            "id": "ac728b75-cf9a-41cc-a191-1c9727c39245"
+          },
+          "id": "46df2f44-7cfc-4be3-8ced-9d97b66bcffb"
+        },
+        {
+          "type": "typing",
+          "locale": "pt-BR",
+          "localTimestamp": "2018-12-13T00:27:52.061Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "57de8b1e-31ff-4718-9d04-0437beaf6682",
+          "timestamp": "2018-12-13T00:27:52.062Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "typing",
+          "locale": "pt-BR",
+          "localTimestamp": "2018-12-13T00:27:52.077Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "a7c3999e-ea4d-4514-ba0e-9f1db7cf89e2",
+          "timestamp": "2018-12-13T00:27:52.078Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "message",
+          "text": "Oi, seja bem-vindo! Como posso ajudá-lo?",
+          "locale": "pt-BR",
+          "localTimestamp": "2018-12-13T00:27:52.089Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "inputHint": "acceptingInput",
+          "id": "0b155662-4f10-497f-90f0-7d44006a7c93",
+          "timestamp": "2018-12-13T00:27:52.090Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        },
+        {
+          "type": "event",
+          "name": "debug",
+          "value": [
+            {
+              "type": "log",
+              "timestamp": 1544660871178,
+              "level": "info",
+              "msg": "Session.sendTyping()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660871179,
+              "level": "info",
+              "msg": "Session.sendTyping()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660871810,
+              "level": "info",
+              "msg": "Session.send()",
+              "args": []
+            },
+            {
+              "type": "log",
+              "timestamp": 1544660872060,
+              "level": "info",
+              "msg": "Session.sendBatch() sending 3 message(s)",
+              "args": []
+            }
+          ],
+          "relatesTo": {
+            "id": "46df2f44-7cfc-4be3-8ced-9d97b66bcffb",
+            "channelId": "emulator",
+            "user": {
+              "id": "fazzendapark",
+              "name": "Visitante"
+            },
+            "conversation": {
+              "id": "ac728b75-cf9a-41cc-a191-1c9727c39245"
+            },
+            "serviceUrl": "http://127.0.0.1:9002"
+          },
+          "text": "Debug Event",
+          "localTimestamp": "2018-12-13T00:27:52.103Z",
+          "recipient": {
+            "id": "fazzendapark",
+            "name": "Visitante"
+          },
+          "id": "17cd5ba8-132b-4f36-b800-ae3abe74cf4f",
+          "timestamp": "2018-12-13T00:27:52.105Z",
+          "from": {
+            "id": "id",
+            "name": "Atendente"
+          }
+        }
+      ]
+    }
+  ]
+}
