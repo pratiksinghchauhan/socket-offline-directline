@@ -1,5 +1,4 @@
 socket-offline-directline
-(https://www.npmjs.com/package/offline-directline)
 ================
 Unofficial package to emulate the bot framework connector locally. This package exposes three endpoints: 
 1. directline - For your messaging client to post and get message activities to
